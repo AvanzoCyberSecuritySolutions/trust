@@ -52,9 +52,12 @@
 
       <form id="contactForm" class="space-y-6">
         
-        <!-- Hidden Web3Forms Fields -->
-        <input type="hidden" name="access_key" value="ac25fd8e-7048-431c-855f-933aa5372d45">
-        <input type="hidden" name="subject" value="New Contact Message from Website">
+        <!-- IMPORTANT: PASTE YOUR NEW ACCESS KEY BELOW -->
+        <!-- Go to web3forms.com, enter info@avanzotrust.in to get this key -->
+        <input type="hidden" name="access_key" value="419554fe-62b1-4d6d-a239-e8989ae9dc56">
+        
+        <!-- Optional: Ensures the email subject line is clear -->
+        <input type="hidden" name="subject" value="New Inquiry for Avanzo Trust">
         <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
         <!-- Name -->
@@ -71,12 +74,12 @@
             class="w-full border border-[#5c4033] p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#5c4033]">
         </div>
 
-        <!-- Phone (Added as per request) -->
-        <div>
+        <!-- Phone -->
+        <!-- <div>
           <label for="contactPhone" class="sr-only">Phone Number</label>
           <input type="tel" id="contactPhone" name="phone" placeholder="Phone Number"
             class="w-full border border-[#5c4033] p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#5c4033]">
-        </div>
+        </div> -->
 
         <!-- Message -->
         <div>
@@ -153,32 +156,31 @@
         let json = await response.json();
         if (response.status == 200) {
             result.innerHTML = "Thank you! Your message has been sent.";
-            result.classList.remove('text-gray-600');
+            result.classList.remove('text-gray-600', 'text-red-600');
             result.classList.add('text-green-600'); // Green for success
             form.reset();
         } else {
             console.log(response);
-            result.innerHTML = json.message;
-            result.classList.remove('text-gray-600');
+            result.innerHTML = json.message || "Something went wrong.";
+            result.classList.remove('text-gray-600', 'text-green-600');
             result.classList.add('text-red-600'); // Red for error
         }
     })
     .catch(error => {
         console.log(error);
         result.innerHTML = "Something went wrong!";
-        result.classList.remove('text-gray-600');
+        result.classList.remove('text-gray-600', 'text-green-600');
         result.classList.add('text-red-600');
     })
-    .then(function() {
-        form.reset();
+    .finally(() => {
+        // Hide the message after 5 seconds
         setTimeout(() => {
-            result.style.display = "none";
             result.classList.add('hidden');
+            result.innerHTML = ""; 
         }, 5000);
     });
   });
 </script>
-
 
   <footer class="relative">
   <!-- Background Image with overlay -->
