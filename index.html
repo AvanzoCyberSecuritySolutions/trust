@@ -206,18 +206,66 @@
 </section> -->
 
   <section class="about-section">
-    <h2>What Are We?</h2>
-    <p>
-      An organisation that deals with problems in Cyberspace and related to cyberspace.
-      Spreading awareness on safety in cyberspace. Awareness campaigns for all.
-      Tying up with security related products and organisations.
-      Assist the victims for legal recourse.
-      Assist the victims for technical recourse.
-      Assist the victims in emotional recourse like counselling, medical assistance etc.
-      Contribute in creating a future that’s safer, cleaner and ethical.
-    </p>
-    <a href="about.html" class="read-more">Read More</a>
-  </section>
+  <h2>What Are We?</h2>
+  <p>
+    An organisation that deals with problems in Cyberspace and related to cyberspace.
+    Spreading awareness on safety in cyberspace. Awareness campaigns for all.
+    Tying up with security related products and organisations.
+    Assist the victims for legal recourse.
+    Assist the victims for technical recourse.
+    Assist the victims in emotional recourse like counselling, medical assistance etc.
+    Contribute in creating a future that's safer, cleaner and ethical.
+  </p>
+
+  <!-- Counters Section -->
+<!-- Counters Section -->
+<div class="flex flex-wrap justify-center gap-8 mt-6">
+
+  <div class="text-center">
+    <h2 class="text-4xl xl:text-5xl font-bold" style="color: #6f4e37;">
+      <span class="counter" data-target="14" style="font-family: 'Raleway', sans-serif;">0</span>+
+    </h2>
+    <p class="text-gray-700">Outreach Programs</p>
+  </div>
+
+  <div class="text-center">
+    <h2 class="text-4xl xl:text-5xl font-bold" style="color: #6f4e37;">
+      <span class="counter" data-target="952" style="font-family: 'Raleway', sans-serif;">0</span>+
+    </h2>
+    <p class="text-gray-700">College Participants Reached</p>
+  </div>
+
+  <div class="text-center">
+    <h2 class="text-4xl xl:text-5xl font-bold" style="color: #6f4e37;">
+      <span class="counter" data-target="272" style="font-family: 'Raleway', sans-serif;">0</span>+
+    </h2>
+    <p class="text-gray-700">Event Participants</p>
+  </div>
+
+</div>
+
+<a href="about.html" class="inline-block mt-6 px-6 py-3 bg-[#6f4e37] text-white font-semibold rounded-lg hover:bg-[#5a3e2b] transition duration-300">
+  Read More
+</a>
+</section>
+
+<script>
+  const counters = document.querySelectorAll('.counter');
+  counters.forEach(counter => {
+    const updateCounter = () => {
+      const target = +counter.getAttribute('data-target');
+      const current = +counter.innerText;
+      const increment = target / 200;
+      if (current < target) {
+        counter.innerText = Math.ceil(current + increment);
+        setTimeout(updateCounter, 20);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCounter();
+  });
+</script>
   <div class="poster-scroll">
   <div class="w-full py-12 px-2 bg-gradient-to-br from-[#f7f3ef] via-[#f3ede7] to-[#e9e1d6] relative">
     <div class="absolute inset-0 pointer-events-none"
