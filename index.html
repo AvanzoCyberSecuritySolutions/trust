@@ -223,14 +223,14 @@
 
   <div class="text-center">
     <h2 class="text-4xl xl:text-5xl font-bold" style="color: #6f4e37;">
-      <span class="counter" data-target="14" style="font-family: 'Raleway', sans-serif;">0</span>+
+      <span class="counter" data-target="200" style="font-family: 'Raleway', sans-serif;">0</span>+
     </h2>
     <p class="text-gray-700">Outreach Programs</p>
   </div>
 
   <div class="text-center">
     <h2 class="text-4xl xl:text-5xl font-bold" style="color: #6f4e37;">
-      <span class="counter" data-target="952" style="font-family: 'Raleway', sans-serif;">0</span>+
+      <span class="counter" data-target="1000" style="font-family: 'Raleway', sans-serif;">0</span>+
     </h2>
     <p class="text-gray-700">College Participants Reached</p>
   </div>
@@ -521,7 +521,189 @@
 
   </div>
 </section>
+<!-- ═══════════════════════════════ FEEDBACK SECTION ═══════════════════════════════ -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 
+<style>
+.fb-sec {
+font-family: "Times New Roman", Times, serif;  background: #f9f1e8;
+  padding: 80px 20px;
+}
+.fb-sec * { box-sizing: border-box; }
+.fb-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+/* header */
+.fb-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.fb-line { width: 36px; height: 2px; background: #a0522d; border-radius: 2px; }
+.fb-label {
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: #a0522d;
+}
+.fb-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 600; color: #3b1f0e;
+  line-height: 1.12; margin: 0 0 14px;
+}
+.fb-heading em { font-style: italic; color: #8b4513; }
+.fb-sub {
+  font-size: 15px; color: #7a5c48;
+  line-height: 1.75; max-width: 500px; margin: 0;
+}
+.fb-sub strong { color: #5c3320; font-weight: 500; }
+
+/* grid */
+.fb-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+@media(max-width:640px){ .fb-grid{ grid-template-columns:1fr; } }
+
+/* image */
+.fb-img-wrap {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 48px rgba(92,51,32,0.22);
+}
+.fb-img-wrap img {
+  width: 100%; display: block;
+  object-fit: cover;
+  border-radius: 18px;
+}
+.fb-img-badge {
+  position: absolute; top: 16px; left: 16px;
+  background: rgba(59,31,14,0.72);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(200,140,90,0.4);
+  border-radius: 100px;
+  padding: 6px 14px;
+  font-size: 11px; font-weight: 500;
+  color: #f0d0a8; letter-spacing: 0.08em;
+}
+
+/* right panel */
+.fb-right {
+  display: flex; flex-direction: column;
+  gap: 24px; padding: 4px 0;
+}
+
+.fb-quote-block {
+  border-left: 2.5px solid #c87941;
+  padding-left: 18px;
+}
+.fb-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-style: italic; color: #3b1f0e;
+  line-height: 1.65; margin: 0 0 8px;
+}
+.fb-author {
+  font-size: 11px; color: #b08060;
+  letter-spacing: 0.08em; font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* stats */
+.fb-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.fb-stat {
+  background: #fff;
+  border: 1.5px solid #e2c9b0;
+  border-radius: 14px;
+  padding: 16px 14px;
+}
+.fb-stat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.9rem; font-weight: 600;
+  color: #7a3b18; line-height: 1; margin: 0 0 4px;
+}
+.fb-stat-lbl {
+  font-size: 11px; color: #b08060;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; font-weight: 500;
+}
+
+/* footer note */
+.fb-note {
+  font-size: 13px; color: #a07858;
+  line-height: 1.65;
+  border-top: 1.5px solid #e2c9b0;
+  padding-top: 18px;
+}
+.fb-note strong { color: #6b3d22; font-weight: 500; }
+</style>
+
+<section class="fb-sec">
+  <div class="fb-inner">
+
+    <!-- Header -->
+    <div>
+      <div class="fb-eyebrow">
+        <div class="fb-line"></div>
+        <span class="fb-label">Community Feedback</span>
+      </div>
+      <h2 class="fb-heading">
+        Voices from the<br/>
+        <em>Ground Up</em>
+      </h2>
+      <p class="fb-sub">
+        Handwritten responses collected from real participants of our
+        <strong>Cyber Awareness Program</strong> — conducted
+        free of cost by Avanzo Charitable Trust.
+      </p>
+    </div>
+
+    <!-- Image + Right -->
+    <div class="fb-grid">
+
+      <div class="fb-img-wrap">
+
+<img src="images/feedback.png" alt="Handwritten participant feedback forms" />
+      </div>
+
+      <div class="fb-right">
+
+        <div class="fb-quote-block">
+          <p class="fb-quote">"Very informative and interesting — the session was a wonderful experience. I would like to learn more."</p>
+          <p class="fb-author">— Program Participant</p>
+        </div>
+
+        <div class="fb-quote-block" style="border-color:#dbbf9a;">
+          <p class="fb-quote" style="color:#6b4c38; font-size:1rem;">"The session was very informative and engaging. Including more real life case studies would make it even better."</p>
+          <p class="fb-author">— Target Group Member</p>
+        </div>
+
+        
+
+        <p class="fb-note">
+          Certified by the <strong>Head / Representative of the Target Group.</strong>
+          All feedback is genuine and participant-driven.
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
     <!-- Upcoming Events Section -->
 
     <section class="events">
