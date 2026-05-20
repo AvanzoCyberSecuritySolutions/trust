@@ -751,7 +751,42 @@ font-family: "Times New Roman", Times, serif;  background: #f9f1e8;
         <a href="threats.html" class="read-more">Read More</a>
       </div>
     </section>
+<section class="w-full  py-4 flex justify-center items-center animate-pulse overflow-hidden">
+  <div class="whitespace-nowrap overflow-hidden">
+    <p class="text-black font-bold text-xl md:text-8xl lg:text-xl  p-6 rounded-lg  animate-marquee">
+      Disclaimer: * We do not charge for hiring. *
+    </p>
+  </div>
+</section>
+<style>
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
 
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+  }
+   .hide-scrollbar::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  .hide-scrollbar {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+  }
+
+</style>
     <footer class="relative">
       <!-- Background Image with overlay -->
       <div class="absolute inset-0">
