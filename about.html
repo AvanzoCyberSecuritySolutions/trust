@@ -70,6 +70,63 @@
     </div>
   </section>
 
+  <section class="max-w-7xl mx-auto px-6 md:px-16 py-16 text-center bg-white rounded-3xl shadow-sm border border-gray-100 my-8">
+    <h2 class="text-4xl font-bold text-[#5c4033] mb-6 font-[Georgia]">What Are We?</h2>
+    <p class="text-lg text-gray-700 max-w-4xl mx-auto mb-10 leading-relaxed">
+      An organisation that deals with problems in Cyberspace and related to cyberspace.
+      Spreading awareness on safety in cyberspace. Awareness campaigns for all.
+      Tying up with security related products and organisations.
+      Assist the victims for legal recourse.
+      Assist the victims for technical recourse.
+      Assist the victims in emotional recourse like counselling, medical assistance etc.
+      Contribute in creating a future that's safer, cleaner and ethical.
+    </p>
+
+    <!-- Counters Section -->
+    <div class="flex flex-wrap justify-center gap-12 mt-6">
+      <div class="text-center">
+        <h2 class="text-5xl xl:text-6xl font-bold text-[#6f4e37] mb-2">
+          <span class="counter" data-target="200" style="font-family: 'Raleway', sans-serif;">0</span>+
+        </h2>
+        <p class="text-gray-700 font-medium tracking-wide">Outreach Programs</p>
+      </div>
+
+      <div class="text-center">
+        <h2 class="text-5xl xl:text-6xl font-bold text-[#6f4e37] mb-2">
+          <span class="counter" data-target="1000" style="font-family: 'Raleway', sans-serif;">0</span>+
+        </h2>
+        <p class="text-gray-700 font-medium tracking-wide">Colleges Reached</p>
+      </div>
+
+      <div class="text-center">
+        <h2 class="text-5xl xl:text-6xl font-bold text-[#6f4e37] mb-2">
+          <span class="counter" data-target="100000" style="font-family: 'Raleway', sans-serif;">0</span>+
+        </h2>
+        <p class="text-gray-700 font-medium tracking-wide">Event Participants</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const counters = document.querySelectorAll('.counter');
+      counters.forEach(counter => {
+        const updateCounter = () => {
+          const target = +counter.getAttribute('data-target');
+          const current = +counter.innerText;
+          const increment = target / 200;
+          if (current < target) {
+            counter.innerText = Math.ceil(current + increment);
+            setTimeout(updateCounter, 20);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCounter();
+      });
+    });
+  </script>
+
   <section class="bg-[#5c4033] py-16">
     <div class="max-w-7xl mx-auto px-6">
       <h3 class="text-white text-2xl font-bold mb-10 text-center opacity-90 tracking-widest uppercase">Awareness
