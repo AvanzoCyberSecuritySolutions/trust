@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Cyber Defense Kit | AVANZO TRUST</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="images/avanzo_trust_logo.png">
+    <style>
+      @media print {
+        body * {
+          visibility: hidden;
+        }
+        #printable-area, #printable-area * {
+          visibility: visible;
+        }
+        #printable-area {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+        }
+        .no-print {
+          display: none !important;
+        }
+      }
+      
+      .custom-checkbox {
+        accent-color: #5c4033;
+        width: 1.25rem;
+        height: 1.25rem;
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body class="bg-[#f7f3ef] overflow-x-hidden">
+  <!-- Header -->
+  <div id="header-container" class="no-print"></div>
+  <script src="js/header.js"></script>
+
+  <!-- Content Section -->
+  <section class="pt-32 pb-16 max-w-5xl mx-auto px-4 md:px-6">
+    <div id="printable-area" class="bg-[#fdf8f3] rounded-xl shadow-2xl border border-[#e5d6c3] overflow-hidden">
+      <!-- Dark Brown Header -->
+      <div class="bg-[#5c4033] p-8 md:p-10 relative">
+        <!-- Decorative circles matching index.html -->
+        <div class="absolute -bottom-16 -left-16 w-52 h-52 rounded-full border-[45px] border-white/5 pointer-events-none"></div>
+        <div class="absolute -top-8 -right-8 w-32 h-32 rounded-full border-[32px] border-white/5 pointer-events-none"></div>
+
+        <div class="relative z-10 flex justify-between items-start mb-4">
+          <span class="inline-block bg-white/15 text-[#f7e9d7] text-[11px] font-medium tracking-widest uppercase px-4 py-1.5 rounded-full border border-white/20">
+            DEFENSE BLUEPRINT
+          </span>
+          <a href="index.html" class="no-print bg-white/10 hover:bg-[#f7e9d7] hover:text-[#5c4033] text-white text-sm font-medium px-4 py-2 rounded-md transition-all duration-200 flex items-center border border-white/20">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+            Home / Back
+          </a>
+        </div>
+        <h1 class="relative z-10 text-3xl md:text-4xl font-[Georgia] font-bold text-white mb-3 leading-tight">Personal Cyber Defense Kit</h1>
+        <p class="relative z-10 text-[#f7e9d7] text-lg max-w-3xl leading-relaxed">
+          Configure and export a personalized security roadmap. Cross off tasks as you secure your environment.
+        </p>
+      </div>
+
+      <!-- Main Body -->
+      <div class="p-8 md:p-10">
+        <p class="text-[#6b5040] mb-8 text-[15px] leading-relaxed">
+          Select the cyber defense layers you wish to customize. Once configured, you can download or print your home roadmap.
+        </p>
+
+        <!-- List of Layers -->
+        <div class="space-y-5">
+          
+          <!-- Layer 1 -->
+          <label class="flex items-start p-6 bg-white border border-[#e5d6c3] rounded-xl cursor-pointer hover:-translate-y-1 hover:shadow-lg transition-transform duration-300">
+            <div class="flex-shrink-0 mt-0.5">
+              <input type="checkbox" checked class="custom-checkbox" />
+            </div>
+            <div class="ml-4">
+              <h3 class="text-lg font-bold text-[#3b1f0e] mb-1">Layer 1: Strong Credential Armor</h3>
+              <p class="text-[#7a5a3a] text-sm md:text-[15px] leading-relaxed">Deploy a strong password manager and systematically rotate duplicate credentials on your central digital profiles.</p>
+            </div>
+          </label>
+
+          <!-- Layer 2 -->
+          <label class="flex items-start p-6 bg-white border border-[#e5d6c3] rounded-xl cursor-pointer hover:-translate-y-1 hover:shadow-lg transition-transform duration-300">
+            <div class="flex-shrink-0 mt-0.5">
+              <input type="checkbox" checked class="custom-checkbox" />
+            </div>
+            <div class="ml-4">
+              <h3 class="text-lg font-bold text-[#3b1f0e] mb-1">Layer 2: Multi-Factor Activation (MFA)</h3>
+              <p class="text-[#7a5a3a] text-sm md:text-[15px] leading-relaxed">Mandate 2FA setups on your main emails (Gmail/Yahoo/Outlook) and active banking apps. Avoid relying strictly on SMS OTPs where possible.</p>
+            </div>
+          </label>
+
+          <!-- Layer 3 -->
+          <label class="flex items-start p-6 bg-white border border-[#e5d6c3] rounded-xl cursor-pointer hover:-translate-y-1 hover:shadow-lg transition-transform duration-300">
+            <div class="flex-shrink-0 mt-0.5">
+              <input type="checkbox" checked class="custom-checkbox" />
+            </div>
+            <div class="ml-4">
+              <h3 class="text-lg font-bold text-[#3b1f0e] mb-1">Layer 3: Router Encryption & Network Armor</h3>
+              <p class="text-[#7a5a3a] text-sm md:text-[15px] leading-relaxed">Change default factory logins on your Wi-Fi router. Secure the router setup using WPA3 encryption.</p>
+            </div>
+          </label>
+
+          <!-- Layer 4 -->
+          <label class="flex items-start p-6 bg-white border border-[#e5d6c3] rounded-xl cursor-pointer hover:-translate-y-1 hover:shadow-lg transition-transform duration-300">
+            <div class="flex-shrink-0 mt-0.5">
+              <input type="checkbox" checked class="custom-checkbox" />
+            </div>
+            <div class="ml-4">
+              <h3 class="text-lg font-bold text-[#3b1f0e] mb-1">Layer 4: Social Perimeter Check</h3>
+              <p class="text-[#7a5a3a] text-sm md:text-[15px] leading-relaxed">Clamp down on public visibility metrics inside your Facebook, Instagram, and LinkedIn accounts. Hide sensitive phone numbers and emails.</p>
+            </div>
+          </label>
+
+        </div>
+
+        <div class="mt-12 pt-6 border-t border-[#e5d3c0]">
+          <h4 class="font-bold text-sm tracking-widest text-[#7a5a3a] uppercase mb-4">SEMINAR TAKEAWAY NOTES / CUSTOM TASK</h4>
+          <div class="min-h-[100px] w-full border border-dashed border-[#d6c4b0] rounded-lg p-4 bg-white/50 text-[#9c7a64] text-sm">
+            Add notes here...
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <!-- Action Button -->
+    <div class="mt-8 flex justify-center no-print">
+      <button onclick="window.print()" class="bg-[#5c4033] hover:bg-[#8b4513] text-white px-8 py-3 rounded-full font-semibold text-[15px] transition-all duration-200 flex items-center shadow-lg hover:scale-105">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+        Print Roadmap
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-container" class="no-print"></div>
+  <script src="js/footer.js"></script>
+
+  <!-- Floating FAB -->
+  <div class="fab-container no-print">
+    <!-- Main FAB -->
+    <button class="fab" id="mainFab">
+      <img src="images/8680117.png" alt="Message" id="fabIcon">
+      <span class="tooltip" id="fabTooltip">Contact us</span>
+    </button>
+
+    <!-- Child FABs -->
+    <button class="fab-child email">
+      <img src="images/images (3).png" alt="Email">
+      <span class="tooltip">Email</span>
+    </button>
+    <button class="fab-child whatsapp">
+      <img src="images/images (17).jpeg" alt="WhatsApp">
+      <span class="tooltip">WhatsApp</span>
+    </button>
+    <button class="fab-child phone">
+      <img src="images/contact-icon-with-phone-symbol-free-png.png" alt="Phone">
+      <span class="tooltip">Phone</span>
+    </button>
+  </div>
+
+  <script>
+    const mainFab = document.getElementById("mainFab");
+    if(mainFab) {
+      const fabIcon = document.getElementById("fabIcon");
+      const fabTooltip = document.getElementById("fabTooltip");
+      const container = document.querySelector(".fab-container");
+
+      let open = false;
+
+      mainFab.addEventListener("click", () => {
+        open = !open;
+        container.classList.toggle("active", open);
+
+        if (open) {
+          fabIcon.src = "images/images (4).png"; // X icon
+          fabTooltip.textContent = "Hide";
+        } else {
+          fabIcon.src = "images/8680117.png"; // Message icon
+          fabTooltip.textContent = "Contact us";
+        }
+      });
+    }
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-World Case Studies | AVANZO TRUST</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="images/avanzo_trust_logo.png">
+    <style>
+      .path-btn {
+        transition: all 0.3s ease;
+      }
+      .path-btn:hover {
+        background-color: #fdf8f3;
+        border-color: #5c4033;
+      }
+      .path-btn.active {
+        background-color: #f7e9d7;
+        border-color: #5c4033;
+      }
+      .path-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        opacity: 0;
+      }
+      .path-content.open {
+        max-height: 500px;
+        opacity: 1;
+      }
+    </style>
+</head>
+<body class="bg-[#f7f3ef] overflow-x-hidden">
+  <!-- Header -->
+  <div id="header-container"></div>
+  <script src="js/header.js"></script>
+
+  <!-- Content Section -->
+  <section class="pt-32 pb-16 max-w-5xl mx-auto px-4 md:px-6">
+    <div class="bg-[#fdf8f3] rounded-xl shadow-2xl border border-[#e5d6c3] overflow-hidden">
+      <!-- Dark Brown Header -->
+      <div class="bg-[#5c4033] p-8 md:p-10 relative">
+        <!-- Decorative circles matching design -->
+        <div class="absolute -bottom-16 -left-16 w-52 h-52 rounded-full border-[45px] border-white/5 pointer-events-none"></div>
+        <div class="absolute -top-8 -right-8 w-32 h-32 rounded-full border-[32px] border-white/5 pointer-events-none"></div>
+
+        <div class="relative z-10 flex justify-between items-start mb-4">
+          <span class="inline-block bg-white/15 text-[#f7e9d7] text-[11px] font-medium tracking-widest uppercase px-4 py-1.5 rounded-full border border-white/20">
+            INTERACTIVE LEARNING
+          </span>
+          <a href="index.html" class="bg-white/10 hover:bg-[#f7e9d7] hover:text-[#5c4033] text-white text-sm font-medium px-4 py-2 rounded-md transition-all duration-200 flex items-center border border-white/20">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+            Home / Back
+          </a>
+        </div>
+        <h1 class="relative z-10 text-3xl md:text-4xl font-[Georgia] font-bold text-white mb-3 leading-tight">Real-World Case Studies</h1>
+        <p class="relative z-10 text-[#f7e9d7] text-lg max-w-3xl leading-relaxed">
+          Explore simulated safety stories based on common attacks and trace how your decisions can alter outcomes.
+        </p>
+      </div>
+
+      <!-- Main Body -->
+      <div class="p-8 md:p-10 space-y-10">
+        
+        <!-- Case 01 -->
+        <div class="bg-white border border-[#e5d6c3] rounded-2xl p-6 shadow-sm">
+          <div class="flex justify-between items-center mb-4">
+            <span class="text-xs font-bold px-3 py-1 bg-[#fff1f2] text-[#fb7185] rounded-full uppercase tracking-wider">
+              SOCIAL ENGINEERING
+            </span>
+            <span class="text-[#9c7a64] text-sm">Estimated duration: 3 mins</span>
+          </div>
+          <h2 class="text-2xl font-[Georgia] font-bold text-[#3b1f0e] mb-3">Case 01: The Urgent Bank OTP Trap</h2>
+          <p class="text-[#6b5040] text-[15px] leading-relaxed mb-6">
+            Rahul receives an automated call claiming to be his local banking branch. They alert him to a "suspicious charge of ₹45,000" originating outside his location. To freeze the transaction, the voice tells him to share the 6-digit One-Time Passcode (OTP) sent to his mobile.
+          </p>
+          
+          <div class="space-y-4">
+            <!-- Path A -->
+            <div>
+              <button onclick="togglePath(this, 'case1-pathA')" class="path-btn w-full text-left p-4 border border-[#e5d6c3] rounded-xl flex justify-between items-center text-[#3b1f0e] font-medium text-[15px]">
+                Path A: Give the caller the OTP to freeze his funds safely.
+                <svg class="w-5 h-5 text-[#9c7a64] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </button>
+              <div id="case1-pathA" class="path-content mt-2 bg-[#fff1f2] rounded-xl border border-[#fb7185]/30 mx-2">
+                <div class="p-5">
+                  <div class="flex items-start">
+                    <span class="text-xl mr-3">❌</span>
+                    <div>
+                      <h4 class="font-bold text-[#be123c] mb-1">Incorrect & Dangerous</h4>
+                      <p class="text-[#881337] text-sm leading-relaxed">By sharing the OTP, Rahul gave the scammer full access to approve a fraudulent transaction. Banks will never ask for your OTP, PIN, or CVV over the phone. This urgency tactic is designed to induce panic.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Path B -->
+            <div>
+              <button onclick="togglePath(this, 'case1-pathB')" class="path-btn w-full text-left p-4 border border-[#e5d6c3] rounded-xl flex justify-between items-center text-[#3b1f0e] font-medium text-[15px]">
+                Path B: Hang up immediately, check bank statement online, and dial the verified customer care number printed on the back of his bank card.
+                <svg class="w-5 h-5 text-[#9c7a64] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </button>
+              <div id="case1-pathB" class="path-content mt-2 bg-[#f0fdf4] rounded-xl border border-[#4ade80]/30 mx-2">
+                <div class="p-5">
+                  <div class="flex items-start">
+                    <span class="text-xl mr-3">✅</span>
+                    <div>
+                      <h4 class="font-bold text-[#166534] mb-1">Correct Decision</h4>
+                      <p class="text-[#14532d] text-sm leading-relaxed">Rahul stayed calm and avoided acting on urgency—a classic social engineering tactic. By calling the official number on his bank card, he verified his account was safe without compromising his details.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Case 02 -->
+        <div class="bg-white border border-[#e5d6c3] rounded-2xl p-6 shadow-sm">
+          <div class="flex justify-between items-center mb-4">
+            <span class="text-xs font-bold px-3 py-1 bg-[#fffbeb] text-[#d97706] rounded-full uppercase tracking-wider">
+              ACADEMIC PHISHING
+            </span>
+            <span class="text-[#9c7a64] text-sm">Estimated duration: 2 mins</span>
+          </div>
+          <h2 class="text-2xl font-[Georgia] font-bold text-[#3b1f0e] mb-3">Case 02: The Spoofed College Admin Portal</h2>
+          <p class="text-[#6b5040] text-[15px] leading-relaxed mb-6">
+            Priya receives an email from "accounts-verif-avanzocollege.in" with the headline: "Warning: Unpaid Semester Fees—Profile Deactivation Imminent." It contains a portal login button to verify the fee slip.
+          </p>
+          
+          <div class="space-y-4">
+            <!-- Path A -->
+            <div>
+              <button onclick="togglePath(this, 'case2-pathA')" class="path-btn w-full text-left p-4 border border-[#e5d6c3] rounded-xl flex justify-between items-center text-[#3b1f0e] font-medium text-[15px]">
+                Path A: Click the link and enter her student credentials to verify her fee status quickly.
+                <svg class="w-5 h-5 text-[#9c7a64] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </button>
+              <div id="case2-pathA" class="path-content mt-2 bg-[#fff1f2] rounded-xl border border-[#fb7185]/30 mx-2">
+                <div class="p-5">
+                  <div class="flex items-start">
+                    <span class="text-xl mr-3">❌</span>
+                    <div>
+                      <h4 class="font-bold text-[#be123c] mb-1">Incorrect & Dangerous</h4>
+                      <p class="text-[#881337] text-sm leading-relaxed">The link directed Priya to a fake website designed to harvest her login credentials. Scammers often spoof domains (like using "-avanzocollege" instead of the official domain) and use urgency to bypass critical thinking.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Path B -->
+            <div>
+              <button onclick="togglePath(this, 'case2-pathB')" class="path-btn w-full text-left p-4 border border-[#e5d6c3] rounded-xl flex justify-between items-center text-[#3b1f0e] font-medium text-[15px]">
+                Path B: Avoid clicking the link, manually type the known college portal URL into her browser, and log in securely.
+                <svg class="w-5 h-5 text-[#9c7a64] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </button>
+              <div id="case2-pathB" class="path-content mt-2 bg-[#f0fdf4] rounded-xl border border-[#4ade80]/30 mx-2">
+                <div class="p-5">
+                  <div class="flex items-start">
+                    <span class="text-xl mr-3">✅</span>
+                    <div>
+                      <h4 class="font-bold text-[#166534] mb-1">Correct Decision</h4>
+                      <p class="text-[#14532d] text-sm leading-relaxed">Priya correctly identified the suspicious sender address. By manually navigating to the official portal instead of trusting the email link, she bypassed the phishing trap and confirmed her account status safely.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+  <script src="js/footer.js"></script>
+
+  <script>
+    function togglePath(btn, contentId) {
+      const content = document.getElementById(contentId);
+      const icon = btn.querySelector('svg');
+      
+      // Close all other paths in the same case
+      const parentCase = btn.closest('.bg-white');
+      const allBtns = parentCase.querySelectorAll('.path-btn');
+      const allContents = parentCase.querySelectorAll('.path-content');
+      
+      let isCurrentlyOpen = content.classList.contains('open');
+
+      // Reset all inside this case
+      allBtns.forEach(b => {
+        b.classList.remove('active');
+        b.querySelector('svg').style.transform = 'rotate(0deg)';
+      });
+      allContents.forEach(c => {
+        c.classList.remove('open');
+      });
+
+      // Toggle current
+      if (!isCurrentlyOpen) {
+        btn.classList.add('active');
+        content.classList.add('open');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+  </script>
+
+  <!-- Floating FAB -->
+  <div class="fab-container">
+    <!-- Main FAB -->
+    <button class="fab" id="mainFab">
+      <img src="images/8680117.png" alt="Message" id="fabIcon">
+      <span class="tooltip" id="fabTooltip">Contact us</span>
+    </button>
+
+    <!-- Child FABs -->
+    <button class="fab-child email">
+      <img src="images/images (3).png" alt="Email">
+      <span class="tooltip">Email</span>
+    </button>
+    <button class="fab-child whatsapp">
+      <img src="images/images (17).jpeg" alt="WhatsApp">
+      <span class="tooltip">WhatsApp</span>
+    </button>
+    <button class="fab-child phone">
+      <img src="images/contact-icon-with-phone-symbol-free-png.png" alt="Phone">
+      <span class="tooltip">Phone</span>
+    </button>
+  </div>
+
+  <script>
+    const mainFab = document.getElementById("mainFab");
+    if(mainFab) {
+      const fabIcon = document.getElementById("fabIcon");
+      const fabTooltip = document.getElementById("fabTooltip");
+      const container = document.querySelector(".fab-container");
+
+      let open = false;
+
+      mainFab.addEventListener("click", () => {
+        open = !open;
+        container.classList.toggle("active", open);
+
+        if (open) {
+          fabIcon.src = "images/images (4).png"; // X icon
+          fabTooltip.textContent = "Hide";
+        } else {
+          fabIcon.src = "images/8680117.png"; // Message icon
+          fabTooltip.textContent = "Contact us";
+        }
+      });
+    }
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
