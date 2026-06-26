@@ -846,41 +846,6 @@ nav {
   display: block;
 }
 
-/* Arrows */
-.event-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.45);
-  color: white;
-  border: none;
-  padding: 10px 14px;
-  font-size: 26px;
-  cursor: pointer;
-  border-radius: 50%;
-  opacity: 0;
-  /* hidden by default */
-  transition: opacity 0.25s ease, transform 0.15s;
-  z-index: 5;
-}
-
-.event-slider:hover .event-arrow {
-  opacity: 1;
-  /* show on hover of the slider */
-}
-
-.event-arrow:active {
-  transform: translateY(-50%) scale(0.95);
-}
-
-.event-arrow.left {
-  left: 12px;
-}
-
-.event-arrow.right {
-  right: 12px;
-}
-
 /* Dots */
 .event-dots {
   position: absolute;
@@ -906,6 +871,7 @@ nav {
   background: white;
   transform: scale(1.05);
 }
+
 
 /* Responsive heights */
 @media (max-width: 992px) {

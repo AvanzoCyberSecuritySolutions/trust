@@ -85,19 +85,16 @@ dots.forEach((dot, i) => {
 document.addEventListener('DOMContentLoaded', function () {
   const trackEl = document.querySelector('.event-track');
   const items = Array.from(document.querySelectorAll('.event-item'));
-  const prevButton = document.querySelector('.event-arrow.left');
-  const nextButton = document.querySelector('.event-arrow.right');
   const dotsContainer = document.querySelector('.event-dots');
 
   if (!trackEl || items.length === 0 || !dotsContainer) {
-    console.warn('Event slider: required elements not found.');
     return;
   }
 
   let currentIndex = 0;
   const total = items.length;
 
-  // create pager buttons (unique names)
+  // create pager buttons
   const pagerButtons = [];
   for (let i = 0; i < total; i++) {
     const btn = document.createElement('button');
@@ -114,7 +111,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function goToSlide(index) {
-    // clamp index
     index = ((index % total) + total) % total;
     trackEl.style.transform = `translateX(-${index * 100}%)`;
     pagerButtons.forEach((b, idx) => {
@@ -122,42 +118,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Next / Prev handlers
-  nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % total;
-    goToSlide(currentIndex);
-  });
-
-  prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + total) % total;
-    goToSlide(currentIndex);
-  });
-
-  // Optional: keyboard support (left/right)
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft') prevButton.click();
-    if (e.key === 'ArrowRight') nextButton.click();
-  });
-
-  // ensure starting position
   goToSlide(0);
 
   let autoplay = setInterval(() => {
     currentIndex = (currentIndex + 1) % total;
     goToSlide(currentIndex);
-  }, 5000); 
+  }, 5000);
 
-  const carouselEl = document.querySelector('.events-carousel');
-  if (carouselEl) {
-    carouselEl.addEventListener('mouseenter', () => clearInterval(autoplay));
-    carouselEl.addEventListener('mouseleave', () => {
+  // Pause on hover
+  const sliderEl = document.querySelector('.event-slider');
+  if (sliderEl) {
+    sliderEl.addEventListener('mouseenter', () => clearInterval(autoplay));
+    sliderEl.addEventListener('mouseleave', () => {
       autoplay = setInterval(() => {
         currentIndex = (currentIndex + 1) % total;
         goToSlide(currentIndex);
-      }, 4000);
+      }, 5000);
     });
   }
-
 });
 
 
