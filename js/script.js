@@ -71,9 +71,6 @@ function prevSlide() {
 // Auto slide (optional)
 setInterval(nextSlide, 5000);
 
-// Arrows
-document.querySelector(".next").addEventListener("click", nextSlide);
-document.querySelector(".prev").addEventListener("click", prevSlide);
 
 // Dots
 dots.forEach((dot, i) => {
