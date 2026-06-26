@@ -9,9 +9,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AVANZO TRUST | Cyber Awareness</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" type="image/png" href="images/avanzo_trust_logo.png">
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -122,11 +126,9 @@
 
 
   <!-- Services & Impact Section Wrapper -->
-  <section class="relative w-full bg-[#fdfaf6] overflow-hidden">
+  <section class="relative w-full bg-[#fdfaf6] overflow-hidden font-['Outfit']">
     
-    <!-- Gradient Transition from Hero -->
-    <div class="w-full h-32 bg-gradient-to-b from-[rgba(0,0,0,0.4)] to-transparent absolute top-0 left-0 z-10 pointer-events-none mix-blend-multiply"></div>
-    
+    <!-- Top shadow removed as requested -->
     <!-- Modern Tech/Cyber Background Elements -->
     <div class="absolute inset-0 z-0 opacity-40 pointer-events-none" style="background-image: radial-gradient(#d6c4b0 1.5px, transparent 1.5px); background-size: 32px 32px;"></div>
     <div class="absolute top-0 left-0 w-96 h-96 bg-[#e5d6c3] rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-pulse pointer-events-none -translate-x-1/2 -translate-y-1/2"></div>
@@ -135,10 +137,9 @@
     <!-- Main Content Container -->
     <div class="max-w-7xl mx-auto px-4 py-20 relative z-20">
     <div class="text-center max-w-2xl mx-auto mb-16">
-      <h2 class="text-3xl md:text-5xl font-extrabold text-[#3b1f0e] mb-4 font-['Outfit']">Our Services & Impact</h2>
-      <p class="text-[#7a5a3a] text-lg font-['Outfit']">Pioneering cyber rehabilitation and digital safety to empower individuals securely across the web.</p>
+      <h2 class="text-3xl md:text-5xl font-extrabold text-[#3b1f0e] mb-4">Our Services & Impact</h2>
+      <p class="text-[#7a5a3a] text-lg">Pioneering cyber rehabilitation and digital safety to empower individuals securely across the web.</p>
     </div>
-    
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
       
       <!-- Left Column: Services -->
@@ -210,28 +211,28 @@
           
           <!-- Stat 1 -->
           <div class="bg-black/20 backdrop-blur-sm p-10 hover:bg-black/40 transition-colors duration-300">
-            <h4 class="text-4xl lg:text-5xl font-extrabold mb-3 tracking-tight font-['Outfit'] bg-gradient-to-r from-white to-[#d6c4b0] bg-clip-text text-transparent">100k+</h4>
+            <h4 class="text-4xl lg:text-5xl font-extrabold mb-3 tracking-tight bg-gradient-to-r from-white to-[#d6c4b0] bg-clip-text text-transparent">100k+</h4>
             <h5 class="text-lg font-bold text-[#d6c4b0] mb-2 leading-snug">Students Addressed</h5>
             <p class="text-[#a8907a] text-sm leading-relaxed">Through our curated curriculum-based program (CAP) in schools.</p>
           </div>
 
           <!-- Stat 2 -->
           <div class="bg-black/20 backdrop-blur-sm p-10 hover:bg-black/40 transition-colors duration-300">
-            <h4 class="text-4xl lg:text-5xl font-extrabold mb-3 tracking-tight font-['Outfit'] bg-gradient-to-r from-white to-[#d6c4b0] bg-clip-text text-transparent">3,000+</h4>
+            <h4 class="text-4xl lg:text-5xl font-extrabold mb-3 tracking-tight bg-gradient-to-r from-white to-[#d6c4b0] bg-clip-text text-transparent">3,000+</h4>
             <h5 class="text-lg font-bold text-[#d6c4b0] mb-2 leading-snug">Social Issue Cases</h5>
             <p class="text-[#a8907a] text-sm leading-relaxed">Handled via our pioneer cyber helpline launched in 2010.</p>
           </div>
 
           <!-- Stat 3 -->
           <div class="bg-black/20 backdrop-blur-sm p-10 hover:bg-black/40 transition-colors duration-300">
-            <h4 class="text-4xl lg:text-5xl font-extrabold mb-3 tracking-tight font-['Outfit'] bg-gradient-to-r from-white to-[#d6c4b0] bg-clip-text text-transparent">200+</h4>
+            <h4 class="text-4xl lg:text-5xl font-extrabold mb-3 tracking-tight bg-gradient-to-r from-white to-[#d6c4b0] bg-clip-text text-transparent">200+</h4>
             <h5 class="text-lg font-bold text-[#d6c4b0] mb-2 leading-snug">Weekly Calls</h5>
             <p class="text-[#a8907a] text-sm leading-relaxed">Managing hundreds of requests daily via WhatsApp helpline since 2015.</p>
           </div>
 
           <!-- Stat 4 -->
           <div class="bg-black/20 backdrop-blur-sm p-10 hover:bg-black/40 transition-colors duration-300">
-            <h4 class="text-4xl lg:text-5xl font-extrabold mb-3 tracking-tight font-['Outfit'] bg-gradient-to-r from-white to-[#d6c4b0] bg-clip-text text-transparent">600+</h4>
+            <h4 class="text-4xl lg:text-5xl font-extrabold mb-3 tracking-tight bg-gradient-to-r from-white to-[#d6c4b0] bg-clip-text text-transparent">600+</h4>
             <h5 class="text-lg font-bold text-[#d6c4b0] mb-2 leading-snug">Total Workshops</h5>
             <p class="text-[#a8907a] text-sm leading-relaxed">Conducted across schools, colleges, and various social forums.</p>
           </div>
@@ -243,518 +244,485 @@
     </div>
   </section>
 
-  <div class="poster-scroll">
-  <div class="w-full py-12 px-2 bg-gradient-to-br from-[#f7f3ef] via-[#f3ede7] to-[#e9e1d6] relative">
-    <div class="absolute inset-0 pointer-events-none"
-      style="background: radial-gradient(circle at 70% 30%, #fff7e6 0%, #f3ede7 70%, transparent 100%); opacity: 0.7;">
-    </div>
-    <div class="relative max-w-6xl mx-auto rounded-3xl shadow-2xl bg-white/90 border border-[#e5d6c3]/60 p-2 md:p-6">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-2 text-[#5c4033] tracking-wide drop-shadow-lg">Our Posters</h2>
-      <p class="text-center text-lg md:text-xl text-[#7a5a3a] mb-8 font-medium">Explore our latest awareness and campaign posters</p>
+  <style>
+    /* Swiper Container */
+    .poster-swiper-container {
+      width: 100%;
+      padding: 2rem 0;
+      overflow: hidden;
+    }
+    .poster-swiper {
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+    /* Slide sizing */
+    .poster-swiper .swiper-slide {
+      width: 270px;
+      height: 380px;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+    
+    .poster-swiper .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-      <div id="poster-carousel" class="overflow-hidden">
-        <div id="poster-track" class="flex gap-6 py-4">
+    /* Continuous ticker tape styling */
+    .poster-swiper .swiper-wrapper {
+      transition-timing-function: linear !important;
+    }
 
-          <div class="poster-card bg-white rounded-2xl shadow-2xl border border-[#e5d6c3] p-1 md:p-2 flex flex-col items-center hover:scale-110 hover:z-10 transition-all duration-300" style="min-width:220px;max-width:270px;flex-shrink:0;">
-            <img src="images/posters/11.jpeg" alt="Poster 1" class="h-64 w-auto rounded-xl mb-2 shadow-lg">
+    /* Swiper Pagination Styling */
+    .poster-swiper .swiper-pagination-bullet {
+      background: rgba(253, 248, 243, 0.4);
+      opacity: 1;
+      width: 10px;
+      height: 10px;
+      transition: all 0.3s ease;
+    }
+    .poster-swiper .swiper-pagination-bullet-active {
+      background: #fdf8f3;
+      transform: scale(1.4);
+    }
+  </style>
+
+  <div class="w-full py-16 px-0 bg-[#2a160a] relative overflow-hidden">
+    <div class="relative w-full mx-auto p-4 md:p-8">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-2 text-[#fdf8f3] tracking-wide drop-shadow-lg">Our Posters</h2>
+      <p class="text-center text-lg md:text-xl text-[#d6c4b0] mb-2 font-medium">Explore our latest awareness and campaign posters</p>
+
+      <div class="poster-swiper-container">
+        <div class="swiper poster-swiper">
+          <div class="swiper-wrapper">
+            <!-- Set 1 -->
+            <div class="swiper-slide">
+              <img src="images/posters/11.jpeg" alt="Poster 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/posters/6.jpeg" alt="Poster 6">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/posters/8.jpeg" alt="Poster 8">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/nurse.jpg" alt="Poster 11">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/dr.jpg" alt="Poster 12">
+            </div>
+            <!-- Set 2 -->
+            <div class="swiper-slide">
+              <img src="images/posters/11.jpeg" alt="Poster 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/posters/6.jpeg" alt="Poster 6">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/posters/8.jpeg" alt="Poster 8">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/nurse.jpg" alt="Poster 11">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/dr.jpg" alt="Poster 12">
+            </div>
+            <!-- Set 3 -->
+            <div class="swiper-slide">
+              <img src="images/posters/11.jpeg" alt="Poster 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/posters/6.jpeg" alt="Poster 6">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/posters/8.jpeg" alt="Poster 8">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/nurse.jpg" alt="Poster 11">
+            </div>
+            <div class="swiper-slide">
+              <img src="images/dr.jpg" alt="Poster 12">
+            </div>
           </div>
-
-          <div class="poster-card bg-white rounded-2xl shadow-2xl border border-[#e5d6c3] p-1 md:p-2 flex flex-col items-center hover:scale-110 hover:z-10 transition-all duration-300" style="min-width:220px;max-width:270px;flex-shrink:0;">
-            <img src="images/posters/6.jpeg" alt="Poster 6" class="h-64 w-auto rounded-xl mb-2 shadow-lg">
-          </div>
-
-          <div class="poster-card bg-white rounded-2xl shadow-2xl border border-[#e5d6c3] p-1 md:p-2 flex flex-col items-center hover:scale-110 hover:z-10 transition-all duration-300" style="min-width:220px;max-width:270px;flex-shrink:0;">
-            <img src="images/posters/8.jpeg" alt="Poster 8" class="h-64 w-auto rounded-xl mb-2 shadow-lg">
-          </div>
-
-          <div class="poster-card bg-white rounded-2xl shadow-2xl border border-[#e5d6c3] p-1 md:p-2 flex flex-col items-center hover:scale-110 hover:z-10 transition-all duration-300" style="min-width:220px;max-width:270px;flex-shrink:0;">
-            <img src="images/nurse.jpg" alt="Poster 11" class="h-64 w-auto rounded-xl mb-2 shadow-lg">
-          </div>
-
-          <div class="poster-card bg-white rounded-2xl shadow-2xl border border-[#e5d6c3] p-1 md:p-2 flex flex-col items-center hover:scale-110 hover:z-10 transition-all duration-300" style="min-width:220px;max-width:270px;flex-shrink:0;">
-            <img src="images/dr.jpg" alt="Poster 12" class="h-64 w-auto rounded-xl mb-2 shadow-lg">
-          </div>
-
         </div>
       </div>
 
-      <div class="flex justify-center mt-8 space-x-2" id="poster-dots"></div>
     </div>
   </div>
-</div>
 
-<script>
-(function () {
-  const track = document.getElementById('poster-track');
-  const carousel = document.getElementById('poster-carousel');
-  const dotsContainer = document.getElementById('poster-dots');
-  let originalCards = Array.from(track.querySelectorAll('.poster-card'));
-  const total = originalCards.length;
-  if (total === 0) return;
-
-  // Clone cards to create infinite loop
-  originalCards.forEach(card => {
-    let cloneEnd = card.cloneNode(true);
-    cloneEnd.classList.add('clone-end');
-    track.appendChild(cloneEnd);
-  });
-  
-  originalCards.slice().reverse().forEach(card => {
-    let cloneStart = card.cloneNode(true);
-    cloneStart.classList.add('clone-start');
-    track.insertBefore(cloneStart, track.firstChild);
-  });
-
-  const allCards = Array.from(track.querySelectorAll('.poster-card'));
-  
-  let current = total; // Start at the first real card (index = total)
-  let autoInterval = null;
-  let isTransitioning = false;
-
-  function getPerView() {
-    const w = carousel.offsetWidth;
-    if (w < 480) return 1;
-    if (w < 700) return 2;
-    if (w < 950) return 3;
-    return 4;
-  }
-
-  function getCardWidth() {
-    const gap = 24; // gap-6
-    return allCards[0].offsetWidth + gap;
-  }
-
-  function renderDots() {
-    dotsContainer.innerHTML = '';
-    const groups = Math.ceil(total / getPerView());
-    for (let i = 0; i < groups; i++) {
-      const dot = document.createElement('span');
-      dot.className = 'poster-dot inline-block rounded-full cursor-pointer transition-all duration-300 mx-1';
-      dot.style.cssText = 'width:12px;height:12px;background:rgba(92,64,51,0.4);';
-      dot.addEventListener('click', () => { 
-        if(isTransitioning) return;
-        goToRealGroup(i); 
-        resetAuto(); 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const swiper = new Swiper('.poster-swiper', {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 30,
+        loop: true,
+        speed: 4000,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
+        },
+        grabCursor: true,
       });
-      dotsContainer.appendChild(dot);
-    }
-    updateDots();
-  }
-
-  function updateDots() {
-    const dots = dotsContainer.querySelectorAll('.poster-dot');
-    if (dots.length === 0) return;
-    const perView = getPerView();
-    // Calculate which real group we're closest to
-    let realIndex = current - total;
-    if (realIndex < 0) realIndex += total;
-    if (realIndex >= total) realIndex -= total;
-    let groupIndex = Math.floor(realIndex / perView);
-    if(groupIndex >= dots.length) groupIndex = dots.length - 1;
-
-    dots.forEach((dot, i) => {
-      dot.style.background = i === groupIndex ? '#5c4033' : 'rgba(92,64,51,0.4)';
-      dot.style.transform = i === groupIndex ? 'scale(1.3)' : 'scale(1)';
     });
-  }
+  </script>
+    <!-- Leaders & Partners Section -->
+    <section class="max-w-6xl mx-auto px-6 py-20">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 text-center">
+        <!-- Officials -->
+        <div class="flex flex-col items-center group">
+          <h3 class="font-['Cormorant_Garamond'] text-3xl md:text-4xl font-semibold text-[#4a3325] mb-4">Officials</h3>
+          <p class="text-[#7a5c48] leading-relaxed mb-8 font-medium text-[15px] max-w-[320px]">
+            Our team of passionate individuals is committed to making a positive impact in the digital realm. Join us on our journey toward a safer cyberspace for all. Meet the officials leading the charge against cyber threats.
+          </p>
+          <a href="officials.html" class="mt-auto group-hover:text-[#c87941] relative inline-flex items-center text-[#5c4033] font-bold text-xs uppercase tracking-widest transition-colors duration-300">
+            Read More
+            <span class="absolute -bottom-1.5 left-0 w-full h-[2px] bg-[#c87941] origin-right scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left"></span>
+          </a>
+        </div>
 
-  function applyTransform() {
-    const offset = current * getCardWidth();
-    track.style.transform = 'translateX(-' + offset + 'px)';
-  }
+        <!-- Advisories -->
+        <div class="flex flex-col items-center group">
+          <h3 class="font-['Cormorant_Garamond'] text-3xl md:text-4xl font-semibold text-[#4a3325] mb-4">Advisories</h3>
+          <p class="text-[#7a5c48] leading-relaxed mb-8 font-medium text-[15px] max-w-[320px]">
+            Our advisory board brings diverse expertise to provide comprehensive guidance, ensuring our efforts align with the ever-evolving landscape of cybersecurity. Meet the individuals shaping our strategic decisions every day.
+          </p>
+          <a href="advisories.html" class="mt-auto group-hover:text-[#c87941] relative inline-flex items-center text-[#5c4033] font-bold text-xs uppercase tracking-widest transition-colors duration-300">
+            Read More
+            <span class="absolute -bottom-1.5 left-0 w-full h-[2px] bg-[#c87941] origin-right scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left"></span>
+          </a>
+        </div>
 
-  function showSlide(idx, animate = true) {
-    current = idx;
-    if (animate) {
-      track.style.transition = 'transform 0.5s ease-in-out';
-      isTransitioning = true;
-    } else {
-      track.style.transition = 'none';
-      isTransitioning = false;
-    }
-    applyTransform();
-    updateDots();
-  }
-
-  function goToRealGroup(groupIndex) {
-    const perView = getPerView();
-    showSlide(total + (groupIndex * perView));
-  }
-
-  track.addEventListener('transitionend', () => {
-    isTransitioning = false;
-    // If we've scrolled into the prepended clones
-    if (current < total) {
-      showSlide(current + total, false);
-    } 
-    // If we've scrolled into the appended clones
-    else if (current >= total * 2) {
-      showSlide(current - total, false);
-    }
-  });
-
-  function startAuto() {
-    stopAuto();
-    autoInterval = setInterval(() => {
-      if(!isTransitioning) showSlide(current + 1);
-    }, 2800);
-  }
-
-  function stopAuto() {
-    if (autoInterval) clearInterval(autoInterval);
-  }
-
-  function resetAuto() {
-    stopAuto();
-    startAuto();
-  }
-
-
-  carousel.addEventListener('touchstart', function (e) {
-    touchStartX = e.touches[0].clientX;
-  }, { passive: true });
-  carousel.addEventListener('touchend', function (e) {
-    const dx = touchStartX - e.changedTouches[0].clientX;
-    if (Math.abs(dx) > 40 && !isTransitioning) {
-      showSlide(dx > 0 ? current + 1 : current - 1);
-      resetAuto();
-    }
-  }, { passive: true });
-
-  let resizeTimer;
-  window.addEventListener('resize', function () {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(function () {
-      showSlide(current, false); // Keep current position but readjust widths instantly
-      renderDots();
-    }, 200);
-  });
-
-  setTimeout(function () {
-    track.style.transition = 'none';
-    showSlide(total, false); // Start at first real item
-    renderDots();
-    startAuto();
-  }, 100);
-
-})();
-</script>
-    <section class="three-column">
-      <div class="column">
-        <h3>Officials</h3>
-        <p>
-          Our team of passionate individuals is committed to making a positive impact
-          in the digital realm. Join us on our journey toward a safer cyberspace for all.
-          Meet the officials leading the charge against cyber threats.
-        </p>
-        <a href="officials.html" class="read-more">Read More</a>
-      </div>
-
-      <div class="column">
-        <h3>Advisories</h3>
-        <p>
-          Our advisory board brings diverse expertise to provide comprehensive guidance,
-          ensuring our efforts align with the ever-evolving landscape of cybersecurity.
-          Meet the individuals shaping our strategic decisions every day.
-        </p>
-        <a href="advisories.html" class="read-more">Read More</a>
-      </div>
-
-      <div class="column">
-        <h3>Affiliates</h3>
-        <p>
-          We proudly collaborate with esteemed organizations who share our commitment
-          to fostering a secure cyberspace. These partnerships amplify our impact and
-          contribute to the continued success of all our initiatives.
-        </p>
-        <a href="affiliates.html" class="read-more">Read More</a>
+        <!-- Affiliates -->
+        <div class="flex flex-col items-center group">
+          <h3 class="font-['Cormorant_Garamond'] text-3xl md:text-4xl font-semibold text-[#4a3325] mb-4">Affiliates</h3>
+          <p class="text-[#7a5c48] leading-relaxed mb-8 font-medium text-[15px] max-w-[320px]">
+            We proudly collaborate with esteemed organizations who share our commitment to fostering a secure cyberspace. These partnerships amplify our impact and contribute to the continued success of all our initiatives.
+          </p>
+          <a href="affiliates.html" class="mt-auto group-hover:text-[#c87941] relative inline-flex items-center text-[#5c4033] font-bold text-xs uppercase tracking-widest transition-colors duration-300">
+            Read More
+            <span class="absolute -bottom-1.5 left-0 w-full h-[2px] bg-[#c87941] origin-right scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left"></span>
+          </a>
+        </div>
       </div>
     </section>
-    <section class="flex flex-col md:flex-row rounded-2xl overflow-hidden border border-[#d6c4b0] my-8 mx-auto max-w-5xl">
+    <!-- Internships Section -->
+    <section class="max-w-6xl mx-auto px-6 mb-24">
+      <div class="relative bg-[#fdf8f3] rounded-[2.5rem] overflow-hidden flex flex-col md:flex-row shadow-[0_24px_50px_-12px_rgba(92,64,51,0.15)] border border-[#e8d5c4]">
+        
+        <!-- Left Panel: Dark Soft Gradient -->
+        <div class="relative md:w-[42%] bg-gradient-to-br from-[#734e38] to-[#4a3325] p-10 md:p-14 flex flex-col justify-center overflow-hidden shrink-0">
+          <!-- Decorative subtle elements -->
+          <div class="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-[#8c6248] opacity-20 blur-3xl"></div>
+          <div class="absolute -top-12 -right-12 w-48 h-48 rounded-full border border-white/10 opacity-30"></div>
+          
+          <div class="relative z-10">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-[#f9eadd] text-[10px] font-bold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full mb-6">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#d5a07c] animate-pulse"></span>
+              Now Open
+            </div>
+            <h2 class="text-white font-['Cormorant_Garamond'] text-5xl md:text-6xl font-bold leading-none mb-10">
+              Internships
+            </h2>
+            
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfS98aNkIoI4f5ySB9FwMce_iAtwqlbp5_7qlLO9X_LG719hA/viewform"
+              class="group inline-flex items-center justify-center gap-3 bg-white text-[#4a3325] font-bold text-sm tracking-wide px-8 py-4 rounded-full shadow-[0_8px_20px_rgba(0,0,0,0.1)] hover:shadow-[0_12px_25px_rgba(0,0,0,0.15)] hover:-translate-y-1 transition-all duration-300 w-fit">
+              Apply Now
+              <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+        </div>
 
-  <!-- Left Panel -->
-  <div class="relative md:w-[38%] bg-[#5c4033] p-8 md:p-10 flex flex-col items-center md:items-start justify-between overflow-hidden gap-6 md:gap-0">
-    <!-- Decorative circles -->
-    <div class="absolute -bottom-16 -left-16 w-52 h-52 rounded-full border-[45px] border-white/5"></div>
-    <div class="absolute -top-8 -right-8 w-32 h-32 rounded-full border-[32px] border-white/5"></div>
+        <!-- Right Panel: Content -->
+        <div class="flex-1 p-10 md:p-14 flex flex-col justify-center relative">
+          <!-- Tags -->
+          <div class="flex flex-wrap gap-2.5 mb-8">
+            <span class="text-[11px] font-bold tracking-wider px-4 py-1.5 rounded-full bg-white text-[#734e38] border border-[#e8d5c4] uppercase shadow-sm">Law</span>
+            <span class="text-[11px] font-bold tracking-wider px-4 py-1.5 rounded-full bg-white text-[#734e38] border border-[#e8d5c4] uppercase shadow-sm">Technology</span>
+            <span class="text-[11px] font-bold tracking-wider px-4 py-1.5 rounded-full bg-white text-[#734e38] border border-[#e8d5c4] uppercase shadow-sm">Social Work</span>
+            <span class="text-[11px] font-bold tracking-wider px-4 py-1.5 rounded-full bg-white text-[#734e38] border border-[#e8d5c4] uppercase shadow-sm">Psychology</span>
+          </div>
 
-    <div class="relative z-10">
-      <span class="inline-block bg-white/15 text-[#f7e9d7] text-[11px] font-medium tracking-widest uppercase px-4 py-1.5 rounded-full border border-white/20 mb-3 md:mb-4">
-        Now Open
-      </span>
-      <h2 class="text-white text-4xl md:text-5xl font-extrabold leading-tight">
-        Internships
-      </h2>
-    </div>
+          <!-- Description -->
+          <p class="text-[15px] md:text-base leading-relaxed text-[#7a5c48] mb-10 max-w-[90%]">
+            Are you passionate about creating a
+            <strong class="text-[#4a3325] font-semibold">safer and more secure cyberspace?</strong>
+            Avanzo Charitable Trust welcomes enthusiastic interns to join our mission.
+            Our program offers students from diverse backgrounds the chance to contribute
+            to meaningful projects and gain
+            <strong class="text-[#4a3325] font-semibold">real hands-on experience</strong>
+            in cybersecurity.
+          </p>
 
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfS98aNkIoI4f5ySB9FwMce_iAtwqlbp5_7qlLO9X_LG719hA/viewform"
-      class="relative z-10 inline-block bg-white text-[#5c4033] font-medium text-sm px-7 py-3 rounded-full w-fit hover:bg-[#f7e9d7] transition-all duration-200 hover:scale-105 shrink-0">
-      Apply Now →
-    </a>
-  </div>
-
-  <!-- Right Panel -->
-  <div class="flex-1 bg-[#fdf8f3] p-8 md:p-10 flex flex-col justify-center gap-4 md:gap-5">
-
-    <!-- Tags -->
-    <div class="flex flex-wrap gap-2">
-      <span class="text-xs font-medium px-4 py-1.5 rounded-full bg-[#f0e4d4] text-[#5c4033] border border-[#d6c4b0]">Law</span>
-      <span class="text-xs font-medium px-4 py-1.5 rounded-full bg-[#f0e4d4] text-[#5c4033] border border-[#d6c4b0]">Technology</span>
-      <span class="text-xs font-medium px-4 py-1.5 rounded-full bg-[#f0e4d4] text-[#5c4033] border border-[#d6c4b0]">Social Work</span>
-      <span class="text-xs font-medium px-4 py-1.5 rounded-full bg-[#f0e4d4] text-[#5c4033] border border-[#d6c4b0]">Psychology</span>
-    </div>
-
-    <!-- Description -->
-    <p class="text-[14px] md:text-[15px] leading-relaxed text-[#6b5040]">
-      Are you passionate about creating a
-      <strong class="text-[#3d2b1f] font-medium">safer and more secure cyberspace?</strong>
-      Avanzo Charitable Trust welcomes enthusiastic interns to join our mission.
-      Our program offers students from diverse backgrounds the chance to contribute
-      to meaningful projects and gain
-      <strong class="text-[#3d2b1f] font-medium">real hands-on experience</strong>
-      in cybersecurity.
-    </p>
-
-    <!-- Stats -->
-    <div class="flex flex-wrap pt-4 md:pt-5 border-t border-[#e5d3c0] gap-y-4">
-      <div class="flex-1 min-w-[30%] pr-4 md:pr-6 border-r border-[#e5d3c0] mr-4 md:mr-6">
-        <span class="block text-xl md:text-2xl font-bold text-[#5c4033]">4+</span>
-        <span class="text-xs text-[#9c7a64] mt-0.5 block">Fields of study</span>
+          <!-- Stats -->
+          <div class="grid grid-cols-3 gap-6 pt-8 border-t border-[#e8d5c4]/60">
+            <div class="flex flex-col">
+              <span class="font-['Cormorant_Garamond'] text-4xl md:text-5xl font-bold text-[#4a3325] leading-none mb-2">4+</span>
+              <span class="text-[10px] font-bold text-[#a6866f] uppercase tracking-widest">Fields of study</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-['Cormorant_Garamond'] text-4xl md:text-5xl font-bold text-[#4a3325] leading-none mb-2">100%</span>
+              <span class="text-[10px] font-bold text-[#a6866f] uppercase tracking-widest">Hands-on work</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-['Cormorant_Garamond'] text-4xl md:text-5xl font-bold text-[#4a3325] leading-none mb-2">Real</span>
+              <span class="text-[10px] font-bold text-[#a6866f] uppercase tracking-widest">Impact made</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="flex-1 min-w-[30%] pr-4 md:pr-6 border-r border-[#e5d3c0] mr-4 md:mr-6">
-        <span class="block text-xl md:text-2xl font-bold text-[#5c4033]">100%</span>
-        <span class="text-xs text-[#9c7a64] mt-0.5 block">Hands-on work</span>
-      </div>
-      <div class="flex-1 min-w-[30%]">
-        <span class="block text-xl md:text-2xl font-bold text-[#5c4033]">Real</span>
-        <span class="text-xs text-[#9c7a64] mt-0.5 block">Impact made</span>
-      </div>
-    </div>
-
-  </div>
-</section>
+    </section>
 <!-- ═══════════════════════════════ FEEDBACK SECTION ═══════════════════════════════ -->
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 
-<style>
-.fb-sec {
-font-family: "Times New Roman", Times, serif;  background: #f9f1e8;
-  padding: 80px 20px;
-}
-.fb-sec * { box-sizing: border-box; }
-.fb-inner {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 52px;
-}
-
-/* header */
-.fb-eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 14px;
-}
-.fb-line { width: 36px; height: 2px; background: #a0522d; border-radius: 2px; }
-.fb-label {
-  font-size: 11px; font-weight: 600;
-  letter-spacing: 0.18em; text-transform: uppercase;
-  color: #a0522d;
-}
-.fb-heading {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.2rem, 5vw, 3.4rem);
-  font-weight: 600; color: #3b1f0e;
-  line-height: 1.12; margin: 0 0 14px;
-}
-.fb-heading em { font-style: italic; color: #8b4513; }
-.fb-sub {
-  font-size: 15px; color: #7a5c48;
-  line-height: 1.75; max-width: 500px; margin: 0;
-}
-.fb-sub strong { color: #5c3320; font-weight: 500; }
-
-/* grid */
-.fb-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 24px;
-  align-items: start;
-}
-@media(max-width:640px){ .fb-grid{ grid-template-columns:1fr; } }
-
-/* image */
-.fb-img-wrap {
-  position: relative;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 12px 48px rgba(92,51,32,0.22);
-}
-.fb-img-wrap img {
-  width: 100%; display: block;
-  object-fit: cover;
-  border-radius: 18px;
-}
-.fb-img-badge {
-  position: absolute; top: 16px; left: 16px;
-  background: rgba(59,31,14,0.72);
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(200,140,90,0.4);
-  border-radius: 100px;
-  padding: 6px 14px;
-  font-size: 11px; font-weight: 500;
-  color: #f0d0a8; letter-spacing: 0.08em;
-}
-
-/* right panel */
-.fb-right {
-  display: flex; flex-direction: column;
-  gap: 24px; padding: 4px 0;
-}
-
-.fb-quote-block {
-  border-left: 2.5px solid #c87941;
-  padding-left: 18px;
-}
-.fb-quote {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
-  font-style: italic; color: #3b1f0e;
-  line-height: 1.65; margin: 0 0 8px;
-}
-.fb-author {
-  font-size: 11px; color: #b08060;
-  letter-spacing: 0.08em; font-weight: 500;
-  text-transform: uppercase;
-}
-
-/* stats */
-.fb-stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-.fb-stat {
-  background: #fff;
-  border: 1.5px solid #e2c9b0;
-  border-radius: 14px;
-  padding: 16px 14px;
-}
-.fb-stat-num {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.9rem; font-weight: 600;
-  color: #7a3b18; line-height: 1; margin: 0 0 4px;
-}
-.fb-stat-lbl {
-  font-size: 11px; color: #b08060;
-  text-transform: uppercase;
-  letter-spacing: 0.1em; font-weight: 500;
-}
-
-/* footer note */
-.fb-note {
-  font-size: 13px; color: #a07858;
-  line-height: 1.65;
-  border-top: 1.5px solid #e2c9b0;
-  padding-top: 18px;
-}
-.fb-note strong { color: #6b3d22; font-weight: 500; }
-</style>
-
-<section class="fb-sec">
-  <div class="fb-inner">
-
-    <!-- Header -->
-    <div>
-      <div class="fb-eyebrow">
-        <div class="fb-line"></div>
-        <span class="fb-label">Community Feedback</span>
-      </div>
-      <h2 class="fb-heading">
-        Voices from the<br/>
-        <em>Ground Up</em>
-      </h2>
-      <p class="fb-sub">
-        Handwritten responses collected from real participants of our
-        <strong>Cyber Awareness Program</strong> — conducted
-        free of cost by Avanzo Charitable Trust.
-      </p>
-    </div>
-
-    <!-- Image + Right -->
-    <div class="fb-grid">
-
-      <div class="fb-img-wrap">
-
-<img src="images/feedback.png" alt="Handwritten participant feedback forms" />
+<section class="py-24 bg-[#faf5f0]">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Elevated Card -->
+    <div class="relative bg-white rounded-[2.5rem] shadow-[0_20px_60px_-15px_rgba(92,64,51,0.08)] p-10 md:p-16 lg:p-20 overflow-hidden border border-[#f0e4d4]">
+      
+      <!-- Decorative Background Quote -->
+      <div class="absolute top-12 right-12 text-[15rem] leading-none text-[#fdf8f3] font-['Cormorant_Garamond'] select-none z-0">
+        "
       </div>
 
-      <div class="fb-right">
-
-        <div class="fb-quote-block">
-          <p class="fb-quote">"Very informative and interesting — the session was a wonderful experience. I would like to learn more."</p>
-          <p class="fb-author">— Program Participant</p>
-        </div>
-
-        <div class="fb-quote-block" style="border-color:#dbbf9a;">
-          <p class="fb-quote" style="color:#6b4c38; font-size:1rem;">"The session was very informative and engaging. Including more real life case studies would make it even better."</p>
-          <p class="fb-author">— Target Group Member</p>
-        </div>
-
+      <div class="relative z-10 flex flex-col gap-16 lg:gap-20">
         
+        <!-- Header -->
+        <div class="max-w-2xl">
+          <div class="flex items-center gap-4 mb-5">
+            <div class="w-10 h-[2px] bg-[#c87941]"></div>
+            <span class="text-[#c87941] text-xs font-bold tracking-[0.2em] uppercase">Community Feedback</span>
+          </div>
+          <h2 class="font-['Cormorant_Garamond'] text-4xl md:text-5xl lg:text-6xl font-bold text-[#4a3325] leading-tight mb-6">
+            Voices from the<br/>
+            <em class="text-[#8b4513] font-medium italic">Ground Up</em>
+          </h2>
+          <p class="text-[#7a5c48] text-base md:text-lg leading-relaxed font-medium">
+            Handwritten responses collected from real participants of our
+            <strong class="text-[#4a3325]">Cyber Awareness Program</strong> — conducted
+            free of cost by Avanzo Charitable Trust.
+          </p>
+        </div>
 
-        <p class="fb-note">
-          Certified by the <strong>Head / Representative of the Target Group.</strong>
-          All feedback is genuine and participant-driven.
-        </p>
+        <!-- Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Image with Tilt and Tape Effect -->
+          <div class="lg:col-span-5 relative group">
+            <!-- Authentic Tape Effect -->
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-28 h-8 bg-white/70 backdrop-blur-md shadow-sm rotate-[-2deg] z-20 border border-white/50"></div>
+            
+            <div class="relative rounded-xl overflow-hidden shadow-[0_15px_35px_rgba(92,64,51,0.15)] border-[6px] border-white rotate-[-2deg] transition-transform duration-500 group-hover:rotate-0">
+              <img src="images/feedback.png" alt="Handwritten participant feedback forms" class="w-full h-auto block" />
+            </div>
+          </div>
+
+          <!-- Quotes -->
+          <div class="lg:col-span-7 flex flex-col justify-center">
+            
+            <!-- First Quote -->
+            <div class="relative">
+              <div class="absolute -top-6 -left-8 text-6xl text-[#f0e4d4] font-['Cormorant_Garamond'] select-none z-0 leading-none">"</div>
+              <div class="relative z-10">
+                <p class="font-['Cormorant_Garamond'] text-2xl md:text-[1.75rem] italic text-[#4a3325] leading-snug mb-5">
+                  Very informative and interesting — the session was a wonderful experience. I would like to learn more.
+                </p>
+                <p class="text-[10px] font-bold text-[#c87941] uppercase tracking-widest">
+                  — Program Participant
+                </p>
+              </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="w-12 h-px bg-[#e8d5c4] my-8 md:my-10"></div>
+
+            <!-- Second Quote -->
+            <div>
+              <p class="font-['Cormorant_Garamond'] text-xl md:text-2xl italic text-[#6b5040] leading-snug mb-4">
+                "The session was very informative and engaging. Including more real life case studies would make it even better."
+              </p>
+              <p class="text-[10px] font-bold text-[#a6866f] uppercase tracking-widest">
+                — Target Group Member
+              </p>
+            </div>
+
+            <!-- Footnote -->
+            <div class="mt-12 pt-6 border-t border-[#f0e4d4]">
+              <p class="text-xs text-[#a6866f] leading-relaxed">
+                Certified by the <strong class="text-[#734e38]">Head / Representative of the Target Group.</strong><br/>
+                All feedback is genuine and participant-driven.
+              </p>
+            </div>
+
+          </div>
+        </div>
 
       </div>
     </div>
-
   </div>
 </section>
 <!-- ═══════════════════════════════════════════════════════════════════════ -->
     <!-- Upcoming Events Section -->
 
-    <section class="events">
-      <div class="events-header">
-        <h2>EVENT HIGHLIGHTS</h2>
-        <h4>News & Events</h4>
+    <section class="max-w-[1400px] mx-auto px-6 py-28">
+      <!-- Header -->
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center gap-3 mb-4">
+          <div class="w-8 h-[2px] bg-[#c87941]"></div>
+          <span class="text-[#c87941] text-xs font-bold tracking-[0.2em] uppercase">News & Events</span>
+          <div class="w-8 h-[2px] bg-[#c87941]"></div>
+        </div>
+        <h2 class="font-['Cormorant_Garamond'] text-4xl md:text-5xl lg:text-6xl font-bold text-[#4a3325] leading-tight">
+          Event Highlights
+        </h2>
       </div>
 
-      <div class="event-slider">
-        <div class="event-track">
-          <!-- Single Photos -->
-          <div class="event-item"><img src="images/Single Photos/1.jpeg" alt="Event 1"></div>
-          <div class="event-item"><img src="images/Single Photos/2.jpg" alt="Event 2"></div>
-          <div class="event-item"><img src="images/Single Photos/3.jpeg" alt="Event 3"></div>
-          <div class="event-item"><img src="images/Single Photos/4.jpeg" alt="Event 4"></div>
-          <div class="event-item"><img src="images/3.jpg" alt="Event 5"></div>
-          <div class="event-item"><img src="images/WhatsApp-Image-2024-01-24-at-16.15.19.jpeg" alt="Event 6"></div>
-          <div class="event-item"><img src="images/7.jpeg" alt="Event 7"></div>
-          <div class="event-item"><img src="images/6.jpg" alt="Event 8"></div>
-          <div class="event-item"><img src="images/8.jpeg" alt="Event 9"></div>
-          <div class="event-item"><img src="images/IMG-20250916-WA0004.jpg" alt="Event 10"></div>
-          <div class="event-item"><img src="images/10.jpeg" alt="Event 11"></div>
-        </div>
+      <!-- Masonry Grid -->
+      <div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
+        
+        <!-- Image 1 -->
+        <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="images/Single Photos/1.jpeg" alt="Event 1" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
 
-        <!-- Dots (will be created by JS) -->
-        <div class="event-dots" aria-hidden="false"></div>
+        <!-- Image 2 -->
+        <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="images/Single Photos/2.jpg" alt="Event 2" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 3 -->
+        <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="images/Single Photos/3.jpeg" alt="Event 3" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 4 -->
+        <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="images/Single Photos/4.jpeg" alt="Event 4" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 5 -->
+        <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="images/3.jpg" alt="Event 5" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 6 -->
+        <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="images/WhatsApp-Image-2024-01-24-at-16.15.19.jpeg" alt="Event 6" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 7 -->
+        <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="images/7.jpeg" alt="Event 7" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 8 -->
+        <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="images/6.jpg" alt="Event 8" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 9 -->
+        <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="images/8.jpeg" alt="Event 9" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 10 -->
+        <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="images/IMG-20250916-WA0004.jpg" alt="Event 10" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 11 -->
+        <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="images/10.jpeg" alt="Event 11" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+      </div>
+
+      <!-- Footer Link -->
+      <div class="mt-20 flex justify-center">
+        <a href="gallery.html" class="group relative inline-flex items-center gap-3 px-8 py-4 bg-white text-[#4a3325] border border-[#e8d5c4] rounded-full font-bold text-xs tracking-[0.15em] uppercase hover:bg-[#faf5f0] hover:border-[#c87941] hover:text-[#c87941] transition-all duration-300 shadow-sm">
+          Explore Full Gallery
+          <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
       </div>
     </section>
 
-    <section class="threats-section">
-      <div class="threats-inner">
-        <h2 class="threats-title">Threats &amp; Concerns on Cyber Space</h2>
+    <section class="relative bg-gradient-to-b from-[#2a1b14] to-[#1a110c] py-28 px-6 overflow-hidden mt-12 mb-12">
+      <!-- Subtle glowing background element -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#c87941] opacity-10 blur-[100px] pointer-events-none rounded-full"></div>
 
-        <p class="threats-desc">
-          A cyber attack is any attempt to gain unauthorized access to a computer system or network,
-          with the intent to steal, alter, disrupt, or destroy data or systems.
+      <!-- Subtle Grid Pattern -->
+      <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+      <div class="relative max-w-4xl mx-auto text-center z-10 flex flex-col items-center">
+        <!-- Icon/Accent -->
+        <div class="mb-8 relative group">
+          <div class="absolute inset-0 bg-[#c87941] rounded-full blur-md opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+          <div class="relative w-16 h-16 rounded-full bg-[#3b271d] border border-white/10 flex items-center justify-center backdrop-blur-sm mx-auto shadow-lg">
+            <svg class="w-7 h-7 text-[#c87941]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Heading -->
+        <h2 class="font-['Cormorant_Garamond'] text-4xl md:text-5xl lg:text-6xl font-bold text-[#fdf8f3] mb-6 leading-tight tracking-wide drop-shadow-md">
+          Threats &amp; Concerns on <br class="md:hidden" /><em class="italic text-[#c87941] font-medium">Cyber Space</em>
+        </h2>
+
+        <!-- Description -->
+        <p class="text-[#e8d5c4] text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto mb-12 font-light opacity-90">
+          A cyber attack is any attempt to gain unauthorized access to a computer system or network, with the intent to steal, alter, disrupt, or destroy data or systems.
         </p>
 
-        <a href="threats.html" class="read-more">Read More</a>
+        <!-- Button -->
+        <a href="threats.html" class="group relative inline-flex items-center justify-center px-10 py-4 font-bold text-xs md:text-sm tracking-[0.2em] uppercase text-[#fdf8f3] bg-transparent border border-[#c87941] rounded-full overflow-hidden transition-all duration-500 hover:bg-[#c87941] hover:border-[#c87941] shadow-[0_0_0_rgba(200,121,65,0)] hover:shadow-[0_0_25px_rgba(200,121,65,0.4)]">
+          <span class="relative z-10 flex items-center gap-3">
+            Read More
+            <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </span>
+        </a>
       </div>
     </section>
 <section class="w-full  py-4 flex justify-center items-center animate-pulse overflow-hidden">
