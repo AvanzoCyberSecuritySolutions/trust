@@ -323,7 +323,7 @@ nav {
   height: 100vh;
   /* fixed height */
   overflow: hidden;
-  font-family: Georgia, serif;
+  font-family: 'Outfit', sans-serif;
   background: rgba(0, 0, 0, 0.4);
   /* semi-transparent black */
 }
@@ -342,15 +342,22 @@ nav {
   height: 100%;
   color: white;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  text-align: right;
-  padding: 250px;
   transition: all 0.8s ease;
   background-size: cover;
   background-position: center;
   opacity: 0;
   transition: opacity 0.8s ease;
+}
+
+.hero-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .carousel-slide .overlay {
@@ -398,6 +405,7 @@ nav {
 
 .hero-content h1 {
   font-size: 70px;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
@@ -409,17 +417,22 @@ nav {
 .view-more {
   display: inline-block;
   margin-top: 15px;
-  padding: 10px 25px;
-
+  padding: 12px 30px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 5px;
-  background: transparent;
-  /* remove background */
-  color: white;
-  /* text white */
+  background: white;
+  color: #3b1f0e;
   border: 2px solid white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
 
+.view-more:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(255, 255, 255, 0.4);
+  background: #fdf8f3;
+  color: #8b4513;
 }
 
 .prev,
