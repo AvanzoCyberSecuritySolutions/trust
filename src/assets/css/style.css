@@ -44,6 +44,12 @@ header.shrink {
 header.shrink .logo img {
   height: 35px;
 }
+/* Inner Page Header */
+header.inner-page {
+  background: rgba(59, 31, 14, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
 
 nav {
   display: flex;
