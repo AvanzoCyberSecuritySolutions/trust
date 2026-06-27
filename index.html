@@ -18,7 +18,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
-<body>
+<body class="bg-[#fdfaf6]">
 
   <!-- Header -->
   <div id="header-container"></div>
@@ -28,7 +28,8 @@
     <div class="carousel-container">
 
       <!-- Slide 1 (brown background) -->
-      <div class="carousel-slide active" style="background: #6f4e37;">
+      <div class="carousel-slide active" style="background: linear-gradient(135deg, #5c4033, #2a160a);">
+        <div class="overlay"></div>
         <div class="hero-container flex flex-col md:flex-row items-center gap-8">
           <div class="md:w-1/2 w-full flex justify-center md:justify-start">
             <img src="images/Avanzo Trust Logo White.png" alt="Avanzo Logo" class="w-64 h-auto drop-shadow-lg">
@@ -131,8 +132,6 @@
     <!-- Top shadow removed as requested -->
     <!-- Modern Tech/Cyber Background Elements -->
     <div class="absolute inset-0 z-0 opacity-40 pointer-events-none" style="background-image: radial-gradient(#d6c4b0 1.5px, transparent 1.5px); background-size: 32px 32px;"></div>
-    <div class="absolute top-0 left-0 w-96 h-96 bg-[#e5d6c3] rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-pulse pointer-events-none -translate-x-1/2 -translate-y-1/2"></div>
-    <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#d6c4b0] rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-pulse pointer-events-none translate-x-1/3 translate-y-1/3" style="animation-delay: 2s;"></div>
 
     <!-- Main Content Container -->
     <div class="max-w-7xl mx-auto px-4 py-20 relative z-20">
@@ -296,10 +295,15 @@
     }
   </style>
 
-  <div class="w-full py-16 px-0 bg-[#2a160a] relative overflow-hidden">
-    <div class="relative w-full mx-auto p-4 md:p-8">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-2 text-[#fdf8f3] tracking-wide drop-shadow-lg">Our Posters</h2>
-      <p class="text-center text-lg md:text-xl text-[#d6c4b0] mb-2 font-medium">Explore our latest awareness and campaign posters</p>
+  <!-- Section Divider -->
+  <div class="max-w-xs mx-auto py-4"><div class="h-[1px] bg-gradient-to-r from-transparent via-[#d6c4b0] to-transparent"></div></div>
+
+  <div class="w-full py-16 px-0 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="mb-8 text-left">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-[#4a3325] tracking-wide drop-shadow-sm reveal-on-scroll">Our Posters</h2>
+        <p class="text-lg md:text-xl text-[#7a5a3a] mt-2 font-medium reveal-on-scroll delay-100">Explore our latest awareness and campaign posters</p>
+      </div>
 
       <div class="poster-swiper-container">
         <div class="swiper poster-swiper">
@@ -375,12 +379,15 @@
       });
     });
   </script>
+    <!-- Section Divider -->
+    <div class="max-w-xs mx-auto py-4"><div class="h-[1px] bg-gradient-to-r from-transparent via-[#d6c4b0] to-transparent"></div></div>
+
     <!-- Leaders & Partners Section -->
     <section class="max-w-6xl mx-auto px-6 py-20">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 text-center">
         <!-- Officials -->
-        <div class="flex flex-col items-center group">
-          <h3 class="font-['Cormorant_Garamond'] text-3xl md:text-4xl font-semibold text-[#4a3325] mb-4">Officials</h3>
+        <div class="flex flex-col items-center group reveal-on-scroll delay-100">
+          <h3 class="font-['Outfit'] text-3xl md:text-4xl font-semibold text-[#4a3325] mb-4">Officials</h3>
           <p class="text-[#7a5c48] leading-relaxed mb-8 font-medium text-[15px] max-w-[320px]">
             Our team of passionate individuals is committed to making a positive impact in the digital realm. Join us on our journey toward a safer cyberspace for all. Meet the officials leading the charge against cyber threats.
           </p>
@@ -391,8 +398,8 @@
         </div>
 
         <!-- Advisories -->
-        <div class="flex flex-col items-center group">
-          <h3 class="font-['Cormorant_Garamond'] text-3xl md:text-4xl font-semibold text-[#4a3325] mb-4">Advisories</h3>
+        <div class="flex flex-col items-center group reveal-on-scroll delay-200">
+          <h3 class="font-['Outfit'] text-3xl md:text-4xl font-semibold text-[#4a3325] mb-4">Advisories</h3>
           <p class="text-[#7a5c48] leading-relaxed mb-8 font-medium text-[15px] max-w-[320px]">
             Our advisory board brings diverse expertise to provide comprehensive guidance, ensuring our efforts align with the ever-evolving landscape of cybersecurity. Meet the individuals shaping our strategic decisions every day.
           </p>
@@ -403,8 +410,8 @@
         </div>
 
         <!-- Affiliates -->
-        <div class="flex flex-col items-center group">
-          <h3 class="font-['Cormorant_Garamond'] text-3xl md:text-4xl font-semibold text-[#4a3325] mb-4">Affiliates</h3>
+        <div class="flex flex-col items-center group reveal-on-scroll delay-300">
+          <h3 class="font-['Outfit'] text-3xl md:text-4xl font-semibold text-[#4a3325] mb-4">Affiliates</h3>
           <p class="text-[#7a5c48] leading-relaxed mb-8 font-medium text-[15px] max-w-[320px]">
             We proudly collaborate with esteemed organizations who share our commitment to fostering a secure cyberspace. These partnerships amplify our impact and contribute to the continued success of all our initiatives.
           </p>
@@ -417,7 +424,7 @@
     </section>
     <!-- Internships Section -->
     <section class="max-w-6xl mx-auto px-6 mb-24">
-      <div class="relative bg-[#fdf8f3] rounded-[2.5rem] overflow-hidden flex flex-col md:flex-row shadow-[0_24px_50px_-12px_rgba(92,64,51,0.15)] border border-[#e8d5c4]">
+      <div class="relative bg-[#fdf8f3] rounded-[2.5rem] overflow-hidden flex flex-col md:flex-row shadow-[0_24px_50px_-12px_rgba(92,64,51,0.15)] border border-[#e8d5c4] reveal-on-scroll">
         
         <!-- Left Panel: Dark Soft Gradient -->
         <div class="relative md:w-[42%] bg-gradient-to-br from-[#734e38] to-[#4a3325] p-10 md:p-14 flex flex-col justify-center overflow-hidden shrink-0">
@@ -430,7 +437,7 @@
               <span class="w-1.5 h-1.5 rounded-full bg-[#d5a07c] animate-pulse"></span>
               Now Open
             </div>
-            <h2 class="text-white font-['Cormorant_Garamond'] text-5xl md:text-6xl font-bold leading-none mb-10">
+            <h2 class="text-white font-['Outfit'] text-5xl md:text-6xl font-bold leading-none mb-10">
               Internships
             </h2>
             
@@ -466,15 +473,15 @@
           <!-- Stats -->
           <div class="grid grid-cols-3 gap-6 pt-8 border-t border-[#e8d5c4]/60">
             <div class="flex flex-col">
-              <span class="font-['Cormorant_Garamond'] text-4xl md:text-5xl font-bold text-[#4a3325] leading-none mb-2">4+</span>
+              <span class="font-['Outfit'] text-4xl md:text-5xl font-bold text-[#4a3325] leading-none mb-2">4+</span>
               <span class="text-[10px] font-bold text-[#a6866f] uppercase tracking-widest">Fields of study</span>
             </div>
             <div class="flex flex-col">
-              <span class="font-['Cormorant_Garamond'] text-4xl md:text-5xl font-bold text-[#4a3325] leading-none mb-2">100%</span>
+              <span class="font-['Outfit'] text-4xl md:text-5xl font-bold text-[#4a3325] leading-none mb-2">100%</span>
               <span class="text-[10px] font-bold text-[#a6866f] uppercase tracking-widest">Hands-on work</span>
             </div>
             <div class="flex flex-col">
-              <span class="font-['Cormorant_Garamond'] text-4xl md:text-5xl font-bold text-[#4a3325] leading-none mb-2">Real</span>
+              <span class="font-['Outfit'] text-4xl md:text-5xl font-bold text-[#4a3325] leading-none mb-2">Real</span>
               <span class="text-[10px] font-bold text-[#a6866f] uppercase tracking-widest">Impact made</span>
             </div>
           </div>
@@ -482,15 +489,15 @@
       </div>
     </section>
 <!-- ═══════════════════════════════ FEEDBACK SECTION ═══════════════════════════════ -->
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<!-- Outfit font already loaded in head -->
 
-<section class="py-24 bg-[#faf5f0]">
+<section class="py-24">
   <div class="max-w-6xl mx-auto px-6">
     <!-- Elevated Card -->
-    <div class="relative bg-white rounded-[2.5rem] shadow-[0_20px_60px_-15px_rgba(92,64,51,0.08)] p-10 md:p-16 lg:p-20 overflow-hidden border border-[#f0e4d4]">
+    <div class="relative bg-white rounded-[2.5rem] shadow-[0_20px_60px_-15px_rgba(92,64,51,0.08)] p-10 md:p-16 lg:p-20 overflow-hidden border border-[#f0e4d4] reveal-on-scroll">
       
       <!-- Decorative Background Quote -->
-      <div class="absolute top-12 right-12 text-[15rem] leading-none text-[#fdf8f3] font-['Cormorant_Garamond'] select-none z-0">
+      <div class="absolute top-12 right-12 text-[15rem] leading-none text-[#fdf8f3] font-['Outfit'] select-none z-0">
         "
       </div>
 
@@ -502,7 +509,7 @@
             <div class="w-10 h-[2px] bg-[#c87941]"></div>
             <span class="text-[#c87941] text-xs font-bold tracking-[0.2em] uppercase">Community Feedback</span>
           </div>
-          <h2 class="font-['Cormorant_Garamond'] text-4xl md:text-5xl lg:text-6xl font-bold text-[#4a3325] leading-tight mb-6">
+          <h2 class="font-['Outfit'] text-4xl md:text-5xl lg:text-6xl font-bold text-[#4a3325] leading-tight mb-6">
             Voices from the<br/>
             <em class="text-[#8b4513] font-medium italic">Ground Up</em>
           </h2>
@@ -516,12 +523,9 @@
         <!-- Content Grid -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          <!-- Image with Tilt and Tape Effect -->
+          <!-- Image with Elegant Shadow -->
           <div class="lg:col-span-5 relative group">
-            <!-- Authentic Tape Effect -->
-            <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-28 h-8 bg-white/70 backdrop-blur-md shadow-sm rotate-[-2deg] z-20 border border-white/50"></div>
-            
-            <div class="relative rounded-xl overflow-hidden shadow-[0_15px_35px_rgba(92,64,51,0.15)] border-[6px] border-white rotate-[-2deg] transition-transform duration-500 group-hover:rotate-0">
+            <div class="relative rounded-xl overflow-hidden shadow-[0_15px_35px_rgba(92,64,51,0.15)] border border-[#e8d5c4] bg-white transition-transform duration-500 hover:-translate-y-2">
               <img src="images/feedback.png" alt="Handwritten participant feedback forms" class="w-full h-auto block" />
             </div>
           </div>
@@ -531,9 +535,9 @@
             
             <!-- First Quote -->
             <div class="relative">
-              <div class="absolute -top-6 -left-8 text-6xl text-[#f0e4d4] font-['Cormorant_Garamond'] select-none z-0 leading-none">"</div>
+              <div class="absolute -top-6 -left-8 text-6xl text-[#f0e4d4] font-['Outfit'] select-none z-0 leading-none">"</div>
               <div class="relative z-10">
-                <p class="font-['Cormorant_Garamond'] text-2xl md:text-[1.75rem] italic text-[#4a3325] leading-snug mb-5">
+                <p class="font-['Outfit'] text-2xl md:text-[1.75rem] italic text-[#4a3325] leading-snug mb-5">
                   Very informative and interesting — the session was a wonderful experience. I would like to learn more.
                 </p>
                 <p class="text-[10px] font-bold text-[#c87941] uppercase tracking-widest">
@@ -547,7 +551,7 @@
 
             <!-- Second Quote -->
             <div>
-              <p class="font-['Cormorant_Garamond'] text-xl md:text-2xl italic text-[#6b5040] leading-snug mb-4">
+              <p class="font-['Outfit'] text-xl md:text-2xl italic text-[#6b5040] leading-snug mb-4">
                 "The session was very informative and engaging. Including more real life case studies would make it even better."
               </p>
               <p class="text-[10px] font-bold text-[#a6866f] uppercase tracking-widest">
@@ -573,26 +577,29 @@
 <!-- ═══════════════════════════════════════════════════════════════════════ -->
     <!-- Upcoming Events Section -->
 
+    <!-- Section Divider -->
+    <div class="max-w-xs mx-auto py-4"><div class="h-[1px] bg-gradient-to-r from-transparent via-[#d6c4b0] to-transparent"></div></div>
+
     <section class="max-w-[1400px] mx-auto px-6 py-28">
       <!-- Header -->
-      <div class="text-center mb-16">
+      <div class="text-center mb-16 reveal-on-scroll">
         <div class="inline-flex items-center gap-3 mb-4">
           <div class="w-8 h-[2px] bg-[#c87941]"></div>
           <span class="text-[#c87941] text-xs font-bold tracking-[0.2em] uppercase">News & Events</span>
           <div class="w-8 h-[2px] bg-[#c87941]"></div>
         </div>
-        <h2 class="font-['Cormorant_Garamond'] text-4xl md:text-5xl lg:text-6xl font-bold text-[#4a3325] leading-tight">
+        <h2 class="font-['Outfit'] text-4xl md:text-5xl lg:text-6xl font-bold text-[#4a3325] leading-tight">
           Event Highlights
         </h2>
       </div>
 
       <!-- Masonry Grid -->
-      <div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
+      <div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6 reveal-on-scroll delay-200">
         
         <!-- Image 1 -->
         <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
-            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
           </div>
           <img src="images/Single Photos/1.jpeg" alt="Event 1" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
         </a>
@@ -600,7 +607,7 @@
         <!-- Image 2 -->
         <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
-            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
           </div>
           <img src="images/Single Photos/2.jpg" alt="Event 2" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
         </a>
@@ -608,7 +615,7 @@
         <!-- Image 3 -->
         <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
-            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
           </div>
           <img src="images/Single Photos/3.jpeg" alt="Event 3" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
         </a>
@@ -616,7 +623,7 @@
         <!-- Image 4 -->
         <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
-            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
           </div>
           <img src="images/Single Photos/4.jpeg" alt="Event 4" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
         </a>
@@ -624,7 +631,7 @@
         <!-- Image 5 -->
         <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
-            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
           </div>
           <img src="images/3.jpg" alt="Event 5" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
         </a>
@@ -632,7 +639,7 @@
         <!-- Image 6 -->
         <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
-            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
           </div>
           <img src="images/WhatsApp-Image-2024-01-24-at-16.15.19.jpeg" alt="Event 6" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
         </a>
@@ -640,7 +647,7 @@
         <!-- Image 7 -->
         <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
-            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
           </div>
           <img src="images/7.jpeg" alt="Event 7" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
         </a>
@@ -648,7 +655,7 @@
         <!-- Image 8 -->
         <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
-            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
           </div>
           <img src="images/6.jpg" alt="Event 8" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
         </a>
@@ -656,7 +663,7 @@
         <!-- Image 9 -->
         <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
-            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
           </div>
           <img src="images/8.jpeg" alt="Event 9" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
         </a>
@@ -664,7 +671,7 @@
         <!-- Image 10 -->
         <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
-            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
           </div>
           <img src="images/IMG-20250916-WA0004.jpg" alt="Event 10" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
         </a>
@@ -672,7 +679,7 @@
         <!-- Image 11 -->
         <a href="gallery.html" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
           <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
-            <span class="text-[#fdf8f3] font-['Cormorant_Garamond'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
           </div>
           <img src="images/10.jpeg" alt="Event 11" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
         </a>
@@ -688,14 +695,14 @@
       </div>
     </section>
 
-    <section class="relative bg-gradient-to-b from-[#2a1b14] to-[#1a110c] py-28 px-6 overflow-hidden mt-12 mb-12">
+    <section class="max-w-6xl mx-auto relative bg-gradient-to-br from-[#3b271d] to-[#2a1b14] rounded-[2.5rem] py-24 px-6 overflow-hidden shadow-2xl mt-12 mb-24 border border-[#4a3325]">
       <!-- Subtle glowing background element -->
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#c87941] opacity-10 blur-[100px] pointer-events-none rounded-full"></div>
 
       <!-- Subtle Grid Pattern -->
       <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 32px 32px;"></div>
 
-      <div class="relative max-w-4xl mx-auto text-center z-10 flex flex-col items-center">
+      <div class="relative max-w-4xl mx-auto text-center z-10 flex flex-col items-center reveal-on-scroll">
         <!-- Icon/Accent -->
         <div class="mb-8 relative group">
           <div class="absolute inset-0 bg-[#c87941] rounded-full blur-md opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
@@ -707,7 +714,7 @@
         </div>
 
         <!-- Heading -->
-        <h2 class="font-['Cormorant_Garamond'] text-4xl md:text-5xl lg:text-6xl font-bold text-[#fdf8f3] mb-6 leading-tight tracking-wide drop-shadow-md">
+        <h2 class="font-['Outfit'] text-4xl md:text-5xl lg:text-6xl font-bold text-[#fdf8f3] mb-6 leading-tight tracking-wide drop-shadow-md">
           Threats &amp; Concerns on <br class="md:hidden" /><em class="italic text-[#c87941] font-medium">Cyber Space</em>
         </h2>
 

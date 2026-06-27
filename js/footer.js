@@ -4,7 +4,7 @@ const footerHTML = `
     <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
       <!-- Column 1 -->
       <div class="space-y-4">
-        <h3 style="font-family: 'Cormorant Garamond', serif;" class="text-3xl font-semibold text-[#d6c4b0] mb-6">Services</h3>
+        <h3 style="font-family: 'Outfit', sans-serif;" class="text-3xl font-semibold text-[#d6c4b0] mb-6">Services</h3>
         <ul class="space-y-3 text-[15px] font-light tracking-wide text-[#c4b09c]">
           <li><a href="https://cap.ind.in/" class="hover:text-[#fff] transition-colors duration-300">Cyber Awareness Programme</a></li>
           <li><a href="serenity.html" class="hover:text-[#fff] transition-colors duration-300">Cyber Serenity</a></li>
@@ -15,7 +15,7 @@ const footerHTML = `
 
       <!-- Column 2 -->
       <div class="space-y-4">
-        <h3 style="font-family: 'Cormorant Garamond', serif;" class="text-3xl font-semibold text-[#d6c4b0] mb-6">Contact</h3>
+        <h3 style="font-family: 'Outfit', sans-serif;" class="text-3xl font-semibold text-[#d6c4b0] mb-6">Contact</h3>
         <ul class="space-y-3 text-[15px] font-light tracking-wide text-[#c4b09c]">
           <li><a href="mailto:avanzotrust@gmail.com" class="hover:text-[#fff] transition-colors duration-300">avanzotrust@gmail.com</a></li>
           <li><a href="tel:+918129771111" class="hover:text-[#fff] transition-colors duration-300">+91 81297 71111</a></li>
@@ -25,7 +25,7 @@ const footerHTML = `
 
       <!-- Column 3 -->
       <div class="space-y-4">
-        <h3 style="font-family: 'Cormorant Garamond', serif;" class="text-3xl font-semibold text-[#d6c4b0] mb-6">Helpline</h3>
+        <h3 style="font-family: 'Outfit', sans-serif;" class="text-3xl font-semibold text-[#d6c4b0] mb-6">Helpline</h3>
         <ul class="space-y-3 text-[15px] font-light tracking-wide text-[#c4b09c]">
           <li>WhatsApp: <a href="tel:+918129771111" class="hover:text-[#fff] transition-colors duration-300">+91 8129771111</a></li>
           <li><a href="mailto:info@avanzotrust.in" class="hover:text-[#fff] transition-colors duration-300">info@avanzotrust.in</a></li>
@@ -36,7 +36,7 @@ const footerHTML = `
 
       <!-- Column 4 -->
       <div class="space-y-4">
-        <h3 style="font-family: 'Cormorant Garamond', serif;" class="text-3xl font-semibold text-[#d6c4b0] mb-6">Follow Us</h3>
+        <h3 style="font-family: 'Outfit', sans-serif;" class="text-3xl font-semibold text-[#d6c4b0] mb-6">Follow Us</h3>
         <div class="flex gap-5">
           <a href="https://www.facebook.com/avanzo.trust" target="_blank" rel="noopener noreferrer" class="group" aria-label="Facebook">
             <div class="w-10 h-10 rounded-full border border-[#7a5a3a] flex items-center justify-center group-hover:bg-[#d6c4b0] group-hover:border-[#d6c4b0] transition-all duration-300">
