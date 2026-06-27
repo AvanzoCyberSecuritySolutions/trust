@@ -3,53 +3,105 @@ layout: layouts/base.njk
 title: "Helpline"
 ---
 
-<!-- Content Section -->
-<section class="pt-32 max-w-4xl mx-auto px-6 py-20 text-center">
-  <!-- Heading -->
-  <h1 class="text-4xl md:text-5xl font-bold font-[Georgia] text-[#5c4033] mb-10">
-    AVANZO HELPLINE
-  </h1>
+<div class="pt-32 pb-20 max-w-7xl mx-auto px-6">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+    
+    <!-- Right Column: Sticky Contact Panel (Mobile First) -->
+    <aside class="lg:col-span-4 lg:sticky lg:top-32 bg-[#3b1f0e] rounded-2xl p-8 lg:p-10 text-[#fdf8f3] shadow-xl order-first lg:order-last">
+      <div class="mb-8">
+        <span class="inline-block text-[#d6c4b0] text-sm font-semibold tracking-wider uppercase mb-3">Emergency Support</span>
+        <h1 class="text-4xl md:text-5xl font-bold font-[Georgia] text-white leading-tight">
+          Avanzo Helpline
+        </h1>
+        <p class="mt-4 text-[#c4b09c] text-lg font-light">
+          Confidential and personalized assistance for any cyber-related challenges you face.
+        </p>
+      </div>
 
-  <!-- Big Image -->
-  <img src="/assets/images/illustrations/phone-maintenance.png" alt="Law & Legal Assistance"
-    class="w-full max-w-4xl mx-auto h-80 md:h-[500px] object-contain" />
+      <div class="space-y-4">
+        <a href="tel:+{{ site.helpline.whatsapp }}" class="flex items-center justify-between w-full bg-[#fdf8f3] text-[#3b1f0e] px-6 py-4 rounded-lg font-semibold hover:bg-white transition-colors group">
+          <span class="flex items-center gap-3">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            Call +91 81297 71111
+          </span>
+          <span class="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all">→</span>
+        </a>
 
-  <!-- Paragraphs -->
-  <div class="space-y-6 text-lg leading-relaxed text-gray-800">
-    <p>
-      At Avanzo, we understand that the rapid evolution of technology brings with it a myriad of challenges and
-      concerns.
-      That’s why we’ve established a dedicated helpline to assist individuals facing cyber-related issues.
-    </p>
-    <p>
-      Our team of knowledgeable and compassionate experts is here to guide you through any cyber-related challenges you
-      may
-      encounter. Whether you’ve fallen victim to online scams,
-      identity theft, or are simply seeking advice on securing your digital presence, Avanzo is your go-to resource.
-    </p>
-    <p>
-      Our helpline offers confidential and personalized assistance, ensuring that you receive the best possible advice
-      tailored to your specific situation. We prioritize empowering individuals to take informed steps towards resolving
-      their cyber-related concerns. From recommending security measures to
-      assisting with reporting cybercrimes, Avanzo is committed to being your beacon of support in the digital realm.
-    </p>
+        <a href="https://wa.me/{{ site.helpline.whatsapp }}" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between w-full bg-[#25D366] text-white px-6 py-4 rounded-lg font-semibold hover:bg-[#1ebd59] transition-colors group">
+          <span class="flex items-center gap-3">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 0C5.383 0 0 5.383 0 12.031c0 2.124.551 4.195 1.597 6.012L.15 24l6.113-1.603c1.761.947 3.743 1.445 5.768 1.445 6.648 0 12.031-5.383 12.031-12.031S18.679 0 12.031 0zm0 21.848c-1.802 0-3.567-.485-5.114-1.402l-.367-.217-3.795.996.996-3.795-.217-.367c-.917-1.547-1.402-3.312-1.402-5.114 0-5.545 4.512-10.057 10.057-10.057 5.545 0 10.057 4.512 10.057 10.057 0 5.545-4.512 10.057-10.057 10.057zm5.526-7.551c-.303-.151-1.795-.886-2.073-.987-.278-.101-.48-.151-.682.151-.202.303-.782.987-.959 1.189-.177.202-.353.227-.656.076-1.392-.697-2.476-1.258-3.411-2.909-.177-.303.177-.278.48-.883.101-.202.05-.379-.025-.53-.076-.151-.682-1.641-.934-2.247-.253-.606-.505-.53-.682-.53h-.581c-.202 0-.53.076-.808.379-.278.303-1.06 1.035-1.06 2.525 0 1.49 1.086 2.929 1.237 3.131.151.202 2.146 3.282 5.176 4.595 1.565.682 2.197.732 2.98.631.783-.101 2.373-.96 2.702-1.894.328-.934.328-1.742.227-1.894-.101-.151-.379-.252-.682-.404z"/></svg>
+            WhatsApp Us
+          </span>
+          <span class="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all">→</span>
+        </a>
+      </div>
+
+      <!-- Helper info -->
+      <div class="mt-8 pt-6 border-t border-[#5c4033] text-sm text-[#c4b09c]">
+        Our team of knowledgeable and compassionate experts is here to guide you. All interactions are strictly confidential.
+      </div>
+    </aside>
+
+    <!-- Left Column: Narrative & Grid -->
+    <div class="lg:col-span-8 space-y-12 lg:pr-4 order-last lg:order-first">
+      
+      <!-- Big Image -->
+      <div class="rounded-2xl overflow-hidden bg-[#f5f5dc] p-8 flex justify-center items-center">
+        <img src="/assets/images/illustrations/phone-maintenance.png" alt="Avanzo Helpline" class="w-full max-w-sm h-auto object-contain" />
+      </div>
+
+      <!-- Narrative -->
+      <div class="prose prose-lg max-w-none text-gray-800">
+        <h2 class="text-3xl font-[Georgia] text-[#3b1f0e] mb-6">A Beacon of Support in the Digital Realm</h2>
+        <p class="leading-relaxed">
+          The rapid evolution of technology brings with it a myriad of challenges and concerns. 
+          That’s why we’ve established a dedicated helpline to empower individuals to take informed steps towards resolving their cyber-related issues.
+        </p>
+      </div>
+
+      <!-- The Grid (What we help with) -->
+      <div>
+        <h3 class="text-2xl font-[Georgia] text-[#3b1f0e] mb-6">What We Can Help With</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          
+          <!-- Card 1 -->
+          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-[#fdf8f3] text-[#5c4033] rounded-full flex items-center justify-center mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+            </div>
+            <h4 class="text-xl font-semibold text-[#3b1f0e] mb-2">Online Scams</h4>
+            <p class="text-gray-600 leading-relaxed">Fallen victim to online fraud or scams? We can help you navigate the aftermath and secure your accounts.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-[#fdf8f3] text-[#5c4033] rounded-full flex items-center justify-center mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path></svg>
+            </div>
+            <h4 class="text-xl font-semibold text-[#3b1f0e] mb-2">Identity Theft</h4>
+            <p class="text-gray-600 leading-relaxed">Guidance and immediate action steps if your personal information has been compromised.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-[#fdf8f3] text-[#5c4033] rounded-full flex items-center justify-center mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+            </div>
+            <h4 class="text-xl font-semibold text-[#3b1f0e] mb-2">Security Advice</h4>
+            <p class="text-gray-600 leading-relaxed">Proactive measures and personalized recommendations for securing your digital presence.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-[#fdf8f3] text-[#5c4033] rounded-full flex items-center justify-center mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"></path></svg>
+            </div>
+            <h4 class="text-xl font-semibold text-[#3b1f0e] mb-2">Reporting Cybercrimes</h4>
+            <p class="text-gray-600 leading-relaxed">Step-by-step assistance with reporting incidents to the appropriate authorities.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
   </div>
-</section>
-
-<!-- Call to Action Section -->
-<section class="bg-[#f5f5dc] py-16 text-center">
-  <h2 class="text-2xl md:text-3xl font-bold text-[#5c4033] mb-8">
-    If you have any questions / If you want a consultation / would like more information /whatsApp or call us at<br>
-    +91 81297 71111
-  </h2>
-
-  <!-- Contact Us Button -->
-  <a href="/contact/"
-    class="inline-flex items-center gap-2 bg-[#5c4033] text-white px-8 py-4 rounded-md font-semibold text-lg transition group">
-    Contact Us
-    <!-- Arrow appears on hover -->
-    <span class="opacity-0 translate-x-0 group-hover:opacity-100 group-hover:translate-x-2 transition">
-      →
-    </span>
-  </a>
-</section>
+</div>
