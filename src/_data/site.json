@@ -1,0 +1,33 @@
+{
+  "name": "Avanzo Charitable Trust",
+  "shortName": "AVANZO TRUST",
+  "tagline": "Cyber Awareness",
+  "url": "https://avanzotrust.in",
+  "analyticsId": "G-HZ5H2HXZ72",
+  "logo": "/assets/images/brand/avanzo-trust-logo.png",
+  "logoWhite": "/assets/images/brand/avanzo-logo-white.png",
+  "logoNav": "/assets/images/brand/avanzo-logo-nav.png",
+  "favicon": "/assets/images/brand/avanzo-trust-logo.png",
+  "email": "avanzotrust@gmail.com",
+  "phone": "+918129771111",
+  "phoneFormatted": "+91 81297 71111",
+  "address": "NRA-89, Whitefield, Puthurakkara, Ayyanthole, Thrissur. 680511",
+  "helpline": {
+    "whatsapp": "+918129771111",
+    "emails": [
+      "info@avanzotrust.in",
+      "info@cap.ind.in",
+      "support@cap.ind.in"
+    ]
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/avanzo.trust",
+    "instagram": "https://www.instagram.com/avanzo_trust",
+    "twitter": "https://x.com/AvanzoT29705",
+    "linkedin": "https://www.linkedin.com/showcase/avanzo-charitable-trust/"
+  },
+  "designCredit": {
+    "name": "avanzodesign.in",
+    "url": "https://avanzodesign.in"
+  }
+}

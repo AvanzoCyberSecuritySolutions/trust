@@ -1,0 +1,737 @@
+---
+layout: layouts/base.njk
+title: "Home"
+---
+
+{% block head %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+{% endblock %}
+
+<section class="hero-carousel">
+    <div class="carousel-container">
+
+      <!-- Slide 1 (brown background) -->
+      <div class="carousel-slide active" style="background: linear-gradient(135deg, #5c4033, #2a160a);">
+        <div class="overlay"></div>
+        <div class="hero-container flex flex-col md:flex-row items-center gap-8">
+          <div class="md:w-1/2 w-full flex justify-center md:justify-start">
+            <img src="/assets/images/brand/avanzo-logo-white.png" alt="Avanzo Logo" class="w-64 h-auto drop-shadow-lg">
+          </div>
+          <div class="hero-content md:w-1/2">
+            <h1>AVANZO CHARITABLE TRUST</h1>
+            <p>
+              Avanzo’s unwavering mission is to weave a stronger, more responsible fabric for our online lives,
+              ensuring that the vast potential of cyber space fosters growth and connection, not harm and exploitation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-slide"
+        style="background: url('/assets/images/illustrations/illustration-auth.png') center/cover no-repeat;">
+        <div class="overlay"></div>
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1>Cyber Awareness</h1>
+            <p>
+              Children at a very tender age have access to the infinite vistas of cyber space. This early exposure can
+              initiate them to the world of cyber bullying, downloading media like movies and music, harassment through
+              e-mail, text or social networking sites,
+              the viewing of pornographic materials and hacking into computers and public or private networks.
+  
+            </p>
+            <a href="https://cap.ind.in/" class="view-more">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-slide" style="background: url('/assets/images/illustrations/authentication.png') center/cover no-repeat;">
+        <div class="overlay"></div>
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1>Cyber Serenity</h1>
+            <p>
+              In the ever-evolving landscape of technology, the charitable trust Avanzo stands at the forefront,
+              pioneering a transformative initiative—Cyber Rehabilitation. Rooted in the belief that everyone deserves a
+              chance at redemption and growth, Avanzo
+              has embarked on a mission to rehabilitate individuals who have succumbed to the darker aspects of the
+              digital world.
+            </p>
+            <a href="/services/serenity/" class="view-more">View More</a> 
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-slide"
+        style="background: url('images/WhatsApp\ Image\ 2025-07-18\ at\ 16.06.29_a5e07ac5.jpg') center/cover no-repeat;">
+        <div class="overlay"></div>
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1>Law & Legal Assistance</h1>
+            <p>
+              Ensions of cyber issues. Our mission is to empower you with the knowledge and resources needed to protect
+              your rights and interests in the digital world.
+            </p>
+            <a href="/services/law/" class="view-more">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="carousel-slide" style="background: url('/assets/images/misc/abstract-bg.jpg') center/cover no-repeat;">
+        <div class="overlay"></div>
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1>Helpline</h1>
+            <p>
+              At Avanzo charitable trust, we understand that the rapid evolution of technology brings with it a myriad of
+              challenges and concerns.
+              That’s why we’ve established a dedicated helpline to assist individuals facing cyber-related issues.
+            </p>
+            <a href="/services/helpline/" class="view-more">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dots -->
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Services & Impact Section Wrapper -->
+  <section class="relative w-full bg-[#fdfaf6] overflow-hidden font-['Outfit']">
+    
+    <!-- Top shadow removed as requested -->
+    <!-- Modern Tech/Cyber Background Elements -->
+    <div class="absolute inset-0 z-0 opacity-40 pointer-events-none" style="background-image: radial-gradient(#d6c4b0 1.5px, transparent 1.5px); background-size: 32px 32px;"></div>
+
+    <!-- Main Content Container -->
+    <div class="max-w-7xl mx-auto px-4 py-20 relative z-20">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-3xl md:text-5xl font-extrabold text-[#3b1f0e] mb-4">Our Services & Impact</h2>
+      <p class="text-[#7a5a3a] text-lg">Pioneering cyber rehabilitation and digital safety to empower individuals securely across the web.</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      
+      <!-- Left Column: Services -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-[#e5d6c3]/60 shadow-lg flex flex-col hover:bg-white hover:shadow-[#d6c4b0]/50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group reveal-on-scroll delay-100 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-white/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          <div class="w-12 h-12 bg-gradient-to-br from-[#fdf8f3] to-[#e5d6c3] rounded-xl flex items-center justify-center mb-6 shadow-sm border border-white/60 group-hover:scale-110 transition-transform duration-500 relative z-10">
+            <svg class="w-6 h-6 text-[#5c4033]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-[#3b1f0e] mb-3">1-Min Health Check</h3>
+          <p class="text-[#7a5a3a] mb-6 flex-grow leading-relaxed text-[15px]">Evaluate your digital safety parameters against our diagnostic questionnaire. Uncover weak security habits immediately.</p>
+          <a href="/resources/health-check/" class="text-[#5c4033] font-bold text-xs tracking-[0.15em] uppercase flex items-center group-hover:text-[#8b4513] transition-colors">
+            START HEALTH CHECK
+            <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-[#e5d6c3]/60 shadow-lg flex flex-col hover:bg-white hover:shadow-[#d6c4b0]/50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group reveal-on-scroll delay-200 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-white/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          <div class="w-12 h-12 bg-gradient-to-br from-[#fdf8f3] to-[#e5d6c3] rounded-xl flex items-center justify-center mb-6 shadow-sm border border-white/60 group-hover:scale-110 transition-transform duration-500 relative z-10">
+            <svg class="w-6 h-6 text-[#5c4033]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-[#3b1f0e] mb-3">Ask Expert & Report</h3>
+          <p class="text-[#7a5a3a] mb-6 flex-grow leading-relaxed text-[15px]">Faced a financial scam, profile hack, or cyber harassment? Submit details and get immediate live AI triage guidance.</p>
+          <a href="/resources/report-threat/" class="text-[#5c4033] font-bold text-xs tracking-[0.15em] uppercase flex items-center group-hover:text-[#8b4513] transition-colors">
+            REPORT INCIDENT
+            <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-[#e5d6c3]/60 shadow-lg flex flex-col hover:bg-white hover:shadow-[#d6c4b0]/50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group reveal-on-scroll delay-300 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-white/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          <div class="w-12 h-12 bg-gradient-to-br from-[#fdf8f3] to-[#e5d6c3] rounded-xl flex items-center justify-center mb-6 shadow-sm border border-white/60 group-hover:scale-110 transition-transform duration-500 relative z-10">
+            <svg class="w-6 h-6 text-[#5c4033]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-[#3b1f0e] mb-3">Personal Defense Kit</h3>
+          <p class="text-[#7a5a3a] mb-6 flex-grow leading-relaxed text-[15px]">Configure, monitor, and print a custom cyber defense roadmap checklist for your home router, email, and social profiles.</p>
+          <a href="/resources/defense-kit/" class="text-[#5c4033] font-bold text-xs tracking-[0.15em] uppercase flex items-center group-hover:text-[#8b4513] transition-colors">
+            BUILD BLUEPRINT
+            <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-[#e5d6c3]/60 shadow-lg flex flex-col hover:bg-white hover:shadow-[#d6c4b0]/50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 group reveal-on-scroll delay-400 relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-white/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          <div class="w-12 h-12 bg-gradient-to-br from-[#fdf8f3] to-[#e5d6c3] rounded-xl flex items-center justify-center mb-6 shadow-sm border border-white/60 group-hover:scale-110 transition-transform duration-500 relative z-10">
+            <svg class="w-6 h-6 text-[#5c4033]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-[#3b1f0e] mb-3">Case Studies</h3>
+          <p class="text-[#7a5a3a] mb-6 flex-grow leading-relaxed text-[15px]">Read about real-world cyber incidents and how they were handled. More content coming soon.</p>
+          <a href="/resources/case-studies/" class="text-[#5c4033] font-bold text-xs tracking-[0.15em] uppercase flex items-center group-hover:text-[#8b4513] transition-colors">
+            VIEW STUDIES
+            <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Impact Stats Dashboard -->
+      <div class="bg-gradient-to-br from-[#5c4033]/90 to-[#2a160a]/95 backdrop-blur-xl rounded-3xl shadow-2xl overflow-hidden flex flex-col justify-center border border-white/10 relative reveal-on-scroll delay-400">
+        <!-- Subtle decorative background blob -->
+        <div class="absolute -top-32 -right-32 w-64 h-64 bg-[#8b4513] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+        <div class="absolute -bottom-32 -left-32 w-64 h-64 bg-[#3b1f0e] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[1px] bg-[#8b4513]/30 relative z-10">
+          
+          <!-- Stat 1 -->
+          <div class="bg-black/20 backdrop-blur-sm p-10 hover:bg-black/40 transition-colors duration-300">
+            <h4 class="text-4xl lg:text-5xl font-extrabold mb-3 tracking-tight bg-gradient-to-r from-white to-[#d6c4b0] bg-clip-text text-transparent">100k+</h4>
+            <h5 class="text-lg font-bold text-[#d6c4b0] mb-2 leading-snug">Students Addressed</h5>
+            <p class="text-[#a8907a] text-sm leading-relaxed">Through our curated curriculum-based program (CAP) in schools.</p>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="bg-black/20 backdrop-blur-sm p-10 hover:bg-black/40 transition-colors duration-300">
+            <h4 class="text-4xl lg:text-5xl font-extrabold mb-3 tracking-tight bg-gradient-to-r from-white to-[#d6c4b0] bg-clip-text text-transparent">3,000+</h4>
+            <h5 class="text-lg font-bold text-[#d6c4b0] mb-2 leading-snug">Social Issue Cases</h5>
+            <p class="text-[#a8907a] text-sm leading-relaxed">Handled via our pioneer cyber helpline launched in 2010.</p>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="bg-black/20 backdrop-blur-sm p-10 hover:bg-black/40 transition-colors duration-300">
+            <h4 class="text-4xl lg:text-5xl font-extrabold mb-3 tracking-tight bg-gradient-to-r from-white to-[#d6c4b0] bg-clip-text text-transparent">200+</h4>
+            <h5 class="text-lg font-bold text-[#d6c4b0] mb-2 leading-snug">Weekly Calls</h5>
+            <p class="text-[#a8907a] text-sm leading-relaxed">Managing hundreds of requests daily via WhatsApp helpline since 2015.</p>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="bg-black/20 backdrop-blur-sm p-10 hover:bg-black/40 transition-colors duration-300">
+            <h4 class="text-4xl lg:text-5xl font-extrabold mb-3 tracking-tight bg-gradient-to-r from-white to-[#d6c4b0] bg-clip-text text-transparent">600+</h4>
+            <h5 class="text-lg font-bold text-[#d6c4b0] mb-2 leading-snug">Total Workshops</h5>
+            <p class="text-[#a8907a] text-sm leading-relaxed">Conducted across schools, colleges, and various social forums.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <style>
+    /* Swiper Container */
+    .poster-swiper-container {
+      width: 100%;
+      padding: 2rem 0;
+      overflow: hidden;
+    }
+    .poster-swiper {
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+    /* Slide sizing */
+    .poster-swiper .swiper-slide {
+      width: 270px;
+      height: 380px;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+    
+    .poster-swiper .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Continuous ticker tape styling */
+    .poster-swiper .swiper-wrapper {
+      transition-timing-function: linear !important;
+    }
+
+    /* Swiper Pagination Styling */
+    .poster-swiper .swiper-pagination-bullet {
+      background: rgba(253, 248, 243, 0.4);
+      opacity: 1;
+      width: 10px;
+      height: 10px;
+      transition: all 0.3s ease;
+    }
+    .poster-swiper .swiper-pagination-bullet-active {
+      background: #fdf8f3;
+      transform: scale(1.4);
+    }
+  </style>
+
+  <!-- Section Divider -->
+  <div class="max-w-xs mx-auto py-4"><div class="h-[1px] bg-gradient-to-r from-transparent via-[#d6c4b0] to-transparent"></div></div>
+
+  <div class="w-full py-16 px-0 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="mb-8 text-left">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-[#4a3325] tracking-wide drop-shadow-sm reveal-on-scroll">Our Posters</h2>
+        <p class="text-lg md:text-xl text-[#7a5a3a] mt-2 font-medium reveal-on-scroll delay-100">Explore our latest awareness and campaign posters</p>
+      </div>
+
+      <div class="poster-swiper-container">
+        <div class="swiper poster-swiper">
+          <div class="swiper-wrapper">
+            <!-- Set 1 -->
+            <div class="swiper-slide">
+              <img src="/assets/images/posters/11.jpeg" alt="Poster 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/posters/6.jpeg" alt="Poster 6">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/posters/8.jpeg" alt="Poster 8">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/misc/nurse.jpg" alt="Poster 11">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/misc/doctor.jpg" alt="Poster 12">
+            </div>
+            <!-- Set 2 -->
+            <div class="swiper-slide">
+              <img src="/assets/images/posters/11.jpeg" alt="Poster 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/posters/6.jpeg" alt="Poster 6">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/posters/8.jpeg" alt="Poster 8">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/misc/nurse.jpg" alt="Poster 11">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/misc/doctor.jpg" alt="Poster 12">
+            </div>
+            <!-- Set 3 -->
+            <div class="swiper-slide">
+              <img src="/assets/images/posters/11.jpeg" alt="Poster 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/posters/6.jpeg" alt="Poster 6">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/posters/8.jpeg" alt="Poster 8">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/misc/nurse.jpg" alt="Poster 11">
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/misc/doctor.jpg" alt="Poster 12">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const swiper = new Swiper('.poster-swiper', {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 30,
+        loop: true,
+        speed: 4000,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
+        },
+        grabCursor: true,
+      });
+    });
+  </script>
+    <!-- Section Divider -->
+    <div class="max-w-xs mx-auto py-4"><div class="h-[1px] bg-gradient-to-r from-transparent via-[#d6c4b0] to-transparent"></div></div>
+
+    <!-- Leaders & Partners Section -->
+    <section class="max-w-6xl mx-auto px-6 py-20">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 text-center">
+        <!-- Officials -->
+        <div class="flex flex-col items-center group reveal-on-scroll delay-100">
+          <h3 class="font-['Outfit'] text-3xl md:text-4xl font-semibold text-[#4a3325] mb-4">Officials</h3>
+          <p class="text-[#7a5c48] leading-relaxed mb-8 font-medium text-[15px] max-w-[320px]">
+            Our team of passionate individuals is committed to making a positive impact in the digital realm. Join us on our journey toward a safer cyberspace for all. Meet the officials leading the charge against cyber threats.
+          </p>
+          <a href="/community/officials/" class="mt-auto group-hover:text-[#c87941] relative inline-flex items-center text-[#5c4033] font-bold text-xs uppercase tracking-widest transition-colors duration-300">
+            Read More
+            <span class="absolute -bottom-1.5 left-0 w-full h-[2px] bg-[#c87941] origin-right scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left"></span>
+          </a>
+        </div>
+
+        <!-- Advisories -->
+        <div class="flex flex-col items-center group reveal-on-scroll delay-200">
+          <h3 class="font-['Outfit'] text-3xl md:text-4xl font-semibold text-[#4a3325] mb-4">Advisories</h3>
+          <p class="text-[#7a5c48] leading-relaxed mb-8 font-medium text-[15px] max-w-[320px]">
+            Our advisory board brings diverse expertise to provide comprehensive guidance, ensuring our efforts align with the ever-evolving landscape of cybersecurity. Meet the individuals shaping our strategic decisions every day.
+          </p>
+          <a href="/resources/advisories/" class="mt-auto group-hover:text-[#c87941] relative inline-flex items-center text-[#5c4033] font-bold text-xs uppercase tracking-widest transition-colors duration-300">
+            Read More
+            <span class="absolute -bottom-1.5 left-0 w-full h-[2px] bg-[#c87941] origin-right scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left"></span>
+          </a>
+        </div>
+
+        <!-- Affiliates -->
+        <div class="flex flex-col items-center group reveal-on-scroll delay-300">
+          <h3 class="font-['Outfit'] text-3xl md:text-4xl font-semibold text-[#4a3325] mb-4">Affiliates</h3>
+          <p class="text-[#7a5c48] leading-relaxed mb-8 font-medium text-[15px] max-w-[320px]">
+            We proudly collaborate with esteemed organizations who share our commitment to fostering a secure cyberspace. These partnerships amplify our impact and contribute to the continued success of all our initiatives.
+          </p>
+          <a href="/community/affiliates/" class="mt-auto group-hover:text-[#c87941] relative inline-flex items-center text-[#5c4033] font-bold text-xs uppercase tracking-widest transition-colors duration-300">
+            Read More
+            <span class="absolute -bottom-1.5 left-0 w-full h-[2px] bg-[#c87941] origin-right scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100 group-hover:origin-left"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Internships Section -->
+    <section class="max-w-6xl mx-auto px-6 mb-24">
+      <div class="relative bg-[#fdf8f3] rounded-[2.5rem] overflow-hidden flex flex-col md:flex-row shadow-[0_24px_50px_-12px_rgba(92,64,51,0.15)] border border-[#e8d5c4] reveal-on-scroll">
+        
+        <!-- Left Panel: Dark Soft Gradient -->
+        <div class="relative md:w-[42%] bg-gradient-to-br from-[#734e38] to-[#4a3325] p-10 md:p-14 flex flex-col justify-center overflow-hidden shrink-0">
+          <!-- Decorative subtle elements -->
+          <div class="absolute -bottom-24 -left-24 w-80 h-80 rounded-full bg-[#8c6248] opacity-20 blur-3xl"></div>
+          <div class="absolute -top-12 -right-12 w-48 h-48 rounded-full border border-white/10 opacity-30"></div>
+          
+          <div class="relative z-10">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-[#f9eadd] text-[10px] font-bold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full mb-6">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#d5a07c] animate-pulse"></span>
+              Now Open
+            </div>
+            <h2 class="text-white font-['Outfit'] text-5xl md:text-6xl font-bold leading-none mb-10">
+              Internships
+            </h2>
+            
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfS98aNkIoI4f5ySB9FwMce_iAtwqlbp5_7qlLO9X_LG719hA/viewform"
+              class="group inline-flex items-center justify-center gap-3 bg-white text-[#4a3325] font-bold text-sm tracking-wide px-8 py-4 rounded-full shadow-[0_8px_20px_rgba(0,0,0,0.1)] hover:shadow-[0_12px_25px_rgba(0,0,0,0.15)] hover:-translate-y-1 transition-all duration-300 w-fit">
+              Apply Now
+              <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Panel: Content -->
+        <div class="flex-1 p-10 md:p-14 flex flex-col justify-center relative">
+          <!-- Tags -->
+          <div class="flex flex-wrap gap-2.5 mb-8">
+            <span class="text-[11px] font-bold tracking-wider px-4 py-1.5 rounded-full bg-white text-[#734e38] border border-[#e8d5c4] uppercase shadow-sm">Law</span>
+            <span class="text-[11px] font-bold tracking-wider px-4 py-1.5 rounded-full bg-white text-[#734e38] border border-[#e8d5c4] uppercase shadow-sm">Technology</span>
+            <span class="text-[11px] font-bold tracking-wider px-4 py-1.5 rounded-full bg-white text-[#734e38] border border-[#e8d5c4] uppercase shadow-sm">Social Work</span>
+            <span class="text-[11px] font-bold tracking-wider px-4 py-1.5 rounded-full bg-white text-[#734e38] border border-[#e8d5c4] uppercase shadow-sm">Psychology</span>
+          </div>
+
+          <!-- Description -->
+          <p class="text-[15px] md:text-base leading-relaxed text-[#7a5c48] mb-10 max-w-[90%]">
+            Are you passionate about creating a
+            <strong class="text-[#4a3325] font-semibold">safer and more secure cyberspace?</strong>
+            Avanzo Charitable Trust welcomes enthusiastic interns to join our mission.
+            Our program offers students from diverse backgrounds the chance to contribute
+            to meaningful projects and gain
+            <strong class="text-[#4a3325] font-semibold">real hands-on experience</strong>
+            in cybersecurity.
+          </p>
+
+          <!-- Stats -->
+          <div class="grid grid-cols-3 gap-6 pt-8 border-t border-[#e8d5c4]/60">
+            <div class="flex flex-col">
+              <span class="font-['Outfit'] text-4xl md:text-5xl font-bold text-[#4a3325] leading-none mb-2">4+</span>
+              <span class="text-[10px] font-bold text-[#a6866f] uppercase tracking-widest">Fields of study</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-['Outfit'] text-4xl md:text-5xl font-bold text-[#4a3325] leading-none mb-2">100%</span>
+              <span class="text-[10px] font-bold text-[#a6866f] uppercase tracking-widest">Hands-on work</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-['Outfit'] text-4xl md:text-5xl font-bold text-[#4a3325] leading-none mb-2">Real</span>
+              <span class="text-[10px] font-bold text-[#a6866f] uppercase tracking-widest">Impact made</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- ═══════════════════════════════ FEEDBACK SECTION ═══════════════════════════════ -->
+<!-- Outfit font already loaded in head -->
+
+<section class="py-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Elevated Card -->
+    <div class="relative bg-white rounded-[2.5rem] shadow-[0_20px_60px_-15px_rgba(92,64,51,0.08)] p-10 md:p-16 lg:p-20 overflow-hidden border border-[#f0e4d4] reveal-on-scroll">
+      
+      <!-- Decorative Background Quote -->
+      <div class="absolute top-12 right-12 text-[15rem] leading-none text-[#fdf8f3] font-['Outfit'] select-none z-0">
+        "
+      </div>
+
+      <div class="relative z-10 flex flex-col gap-16 lg:gap-20">
+        
+        <!-- Header -->
+        <div class="max-w-2xl">
+          <div class="flex items-center gap-4 mb-5">
+            <div class="w-10 h-[2px] bg-[#c87941]"></div>
+            <span class="text-[#c87941] text-xs font-bold tracking-[0.2em] uppercase">Community Feedback</span>
+          </div>
+          <h2 class="font-['Outfit'] text-4xl md:text-5xl lg:text-6xl font-bold text-[#4a3325] leading-tight mb-6">
+            Voices from the<br/>
+            <em class="text-[#8b4513] font-medium italic">Ground Up</em>
+          </h2>
+          <p class="text-[#7a5c48] text-base md:text-lg leading-relaxed font-medium">
+            Handwritten responses collected from real participants of our
+            <strong class="text-[#4a3325]">Cyber Awareness Program</strong> — conducted
+            free of cost by Avanzo Charitable Trust.
+          </p>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Image with Elegant Shadow -->
+          <div class="lg:col-span-5 relative group">
+            <div class="relative rounded-xl overflow-hidden shadow-[0_15px_35px_rgba(92,64,51,0.15)] border border-[#e8d5c4] bg-white transition-transform duration-500 hover:-translate-y-2">
+              <img src="/assets/images/misc/feedback.png" alt="Handwritten participant feedback forms" class="w-full h-auto block" />
+            </div>
+          </div>
+
+          <!-- Quotes -->
+          <div class="lg:col-span-7 flex flex-col justify-center">
+            
+            <!-- First Quote -->
+            <div class="relative">
+              <div class="absolute -top-6 -left-8 text-6xl text-[#f0e4d4] font-['Outfit'] select-none z-0 leading-none">"</div>
+              <div class="relative z-10">
+                <p class="font-['Outfit'] text-2xl md:text-[1.75rem] italic text-[#4a3325] leading-snug mb-5">
+                  Very informative and interesting — the session was a wonderful experience. I would like to learn more.
+                </p>
+                <p class="text-[10px] font-bold text-[#c87941] uppercase tracking-widest">
+                  — Program Participant
+                </p>
+              </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="w-12 h-px bg-[#e8d5c4] my-8 md:my-10"></div>
+
+            <!-- Second Quote -->
+            <div>
+              <p class="font-['Outfit'] text-xl md:text-2xl italic text-[#6b5040] leading-snug mb-4">
+                "The session was very informative and engaging. Including more real life case studies would make it even better."
+              </p>
+              <p class="text-[10px] font-bold text-[#a6866f] uppercase tracking-widest">
+                — Target Group Member
+              </p>
+            </div>
+
+            <!-- Footnote -->
+            <div class="mt-12 pt-6 border-t border-[#f0e4d4]">
+              <p class="text-xs text-[#a6866f] leading-relaxed">
+                Certified by the <strong class="text-[#734e38]">Head / Representative of the Target Group.</strong><br/>
+                All feedback is genuine and participant-driven.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ═══════════════════════════════════════════════════════════════════════ -->
+    <!-- Upcoming Events Section -->
+
+    <!-- Section Divider -->
+    <div class="max-w-xs mx-auto py-4"><div class="h-[1px] bg-gradient-to-r from-transparent via-[#d6c4b0] to-transparent"></div></div>
+
+    <section class="max-w-[1400px] mx-auto px-6 py-28">
+      <!-- Header -->
+      <div class="text-center mb-16 reveal-on-scroll">
+        <div class="inline-flex items-center gap-3 mb-4">
+          <div class="w-8 h-[2px] bg-[#c87941]"></div>
+          <span class="text-[#c87941] text-xs font-bold tracking-[0.2em] uppercase">News & Events</span>
+          <div class="w-8 h-[2px] bg-[#c87941]"></div>
+        </div>
+        <h2 class="font-['Outfit'] text-4xl md:text-5xl lg:text-6xl font-bold text-[#4a3325] leading-tight">
+          Event Highlights
+        </h2>
+      </div>
+
+      <!-- Masonry Grid -->
+      <div class="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6 reveal-on-scroll delay-200">
+        
+        <!-- Image 1 -->
+        <a href="/gallery/" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="/assets/images/events/1.jpeg" alt="Event 1" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 2 -->
+        <a href="/gallery/" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="/assets/images/events/2.jpg" alt="Event 2" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 3 -->
+        <a href="/gallery/" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="/assets/images/events/3.jpeg" alt="Event 3" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 4 -->
+        <a href="/gallery/" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="/assets/images/events/4.jpeg" alt="Event 4" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 5 -->
+        <a href="/gallery/" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="/assets/images/events/event-3.jpg" alt="Event 5" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 6 -->
+        <a href="/gallery/" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="/assets/images/team/team-photo-2024.jpeg" alt="Event 6" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 7 -->
+        <a href="/gallery/" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="/assets/images/events/event-7.jpeg" alt="Event 7" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 8 -->
+        <a href="/gallery/" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="/assets/images/events/event-6.jpg" alt="Event 8" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 9 -->
+        <a href="/gallery/" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="/assets/images/events/event-8.jpeg" alt="Event 9" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 10 -->
+        <a href="/gallery/" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="/assets/images/events/event-photo-sep2025.jpg" alt="Event 10" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+        <!-- Image 11 -->
+        <a href="/gallery/" class="group relative block overflow-hidden rounded-[1.5rem] break-inside-avoid shadow-sm hover:shadow-2xl hover:shadow-[#5c4033]/20 transition-shadow duration-500">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-[#3b271d]/50 transition-colors duration-500 z-10 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <span class="text-[#fdf8f3] font-['Outfit'] italic text-2xl tracking-wide drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">View Event</span>
+          </div>
+          <img src="/assets/images/events/event-10.jpeg" alt="Event 11" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+        </a>
+
+      </div>
+
+      <!-- Footer Link -->
+      <div class="mt-20 flex justify-center">
+        <a href="/gallery/" class="group relative inline-flex items-center gap-3 px-8 py-4 bg-white text-[#4a3325] border border-[#e8d5c4] rounded-full font-bold text-xs tracking-[0.15em] uppercase hover:bg-[#faf5f0] hover:border-[#c87941] hover:text-[#c87941] transition-all duration-300 shadow-sm">
+          Explore Full Gallery
+          <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto relative bg-gradient-to-br from-[#3b271d] to-[#2a1b14] rounded-[2.5rem] py-24 px-6 overflow-hidden shadow-2xl mt-12 mb-24 border border-[#4a3325]">
+      <!-- Subtle glowing background element -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#c87941] opacity-10 blur-[100px] pointer-events-none rounded-full"></div>
+
+      <!-- Subtle Grid Pattern -->
+      <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+      <div class="relative max-w-4xl mx-auto text-center z-10 flex flex-col items-center reveal-on-scroll">
+        <!-- Icon/Accent -->
+        <div class="mb-8 relative group">
+          <div class="absolute inset-0 bg-[#c87941] rounded-full blur-md opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+          <div class="relative w-16 h-16 rounded-full bg-[#3b271d] border border-white/10 flex items-center justify-center backdrop-blur-sm mx-auto shadow-lg">
+            <svg class="w-7 h-7 text-[#c87941]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Heading -->
+        <h2 class="font-['Outfit'] text-4xl md:text-5xl lg:text-6xl font-bold text-[#fdf8f3] mb-6 leading-tight tracking-wide drop-shadow-md">
+          Threats &amp; Concerns on <br class="md:hidden" /><em class="italic text-[#c87941] font-medium">Cyber Space</em>
+        </h2>
+
+        <!-- Description -->
+        <p class="text-[#e8d5c4] text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto mb-12 font-light opacity-90">
+          A cyber attack is any attempt to gain unauthorized access to a computer system or network, with the intent to steal, alter, disrupt, or destroy data or systems.
+        </p>
+
+        <!-- Button -->
+        <a href="/resources/threats/" class="group relative inline-flex items-center justify-center px-10 py-4 font-bold text-xs md:text-sm tracking-[0.2em] uppercase text-[#fdf8f3] bg-transparent border border-[#c87941] rounded-full overflow-hidden transition-all duration-500 hover:bg-[#c87941] hover:border-[#c87941] shadow-[0_0_0_rgba(200,121,65,0)] hover:shadow-[0_0_25px_rgba(200,121,65,0.4)]">
+          <span class="relative z-10 flex items-center gap-3">
+            Read More
+            <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </span>
+        </a>
+      </div>
+    </section>
+<section class="w-full max-w-6xl mx-auto py-8 mt-4 flex justify-center items-center border-t border-[#c87941]/20">
+  <p class="text-xs tracking-widest uppercase text-[#c87941] font-medium">
+    Disclaimer: * We do not charge for hiring *
+  </p>
+</section>
+<style>
+   .hide-scrollbar::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  .hide-scrollbar {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+  }
+
+</style>

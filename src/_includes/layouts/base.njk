@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analyticsId }}"></script>
+  <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', '{{ site.analyticsId }}'); </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} | {{ site.shortName }}{% else %}{{ site.shortName }} | {{ site.tagline }}{% endif %}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  {% block head %}{% endblock %}
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="{{ site.favicon }}">
+</head>
+
+<body class="bg-[#fdfaf6]">
+
+  {% include "partials/header.njk" %}
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  {% include "partials/footer.njk" %}
+
+  <!-- Floating FAB -->
+  <div class="fab-container">
+    <button class="fab" id="mainFab">
+      <img src="/assets/images/misc/message-icon.png" alt="Message" id="fabIcon">
+      <span class="tooltip" id="fabTooltip">Contact us</span>
+    </button>
+    <button class="fab-child email">
+      <img src="/assets/images/misc/social-icon-chat.png" alt="Email">
+      <span class="tooltip">Email</span>
+    </button>
+    <button class="fab-child whatsapp">
+      <img src="/assets/images/brand/avanzo-logo-icon.jpeg" alt="WhatsApp">
+      <span class="tooltip">WhatsApp</span>
+    </button>
+    <button class="fab-child phone">
+      <img src="/assets/images/misc/contact-icon.png" alt="Phone">
+      <span class="tooltip">Phone</span>
+    </button>
+  </div>
+
+  <script>
+    const mainFab = document.getElementById("mainFab");
+    const fabIcon = document.getElementById("fabIcon");
+    const fabTooltip = document.getElementById("fabTooltip");
+    const container = document.querySelector(".fab-container");
+
+    let open = false;
+
+    mainFab.addEventListener("click", () => {
+      open = !open;
+      container.classList.toggle("active", open);
+
+      if (open) {
+        fabIcon.src = "/assets/images/misc/social-icon-close.png";
+        fabTooltip.textContent = "Hide";
+      } else {
+        fabIcon.src = "/assets/images/misc/message-icon.png";
+        fabTooltip.textContent = "Contact us";
+      }
+    });
+  </script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

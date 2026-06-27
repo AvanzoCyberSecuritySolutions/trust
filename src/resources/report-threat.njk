@@ -1,0 +1,93 @@
+---
+layout: layouts/base.njk
+title: "Report a Threat"
+---
+
+<main class="flex-grow flex items-center justify-center py-24 px-4 mt-16">
+    <div class="max-w-4xl w-full bg-white rounded-3xl shadow-2xl border border-[#e5d6c3] overflow-hidden">
+      
+      <!-- Top Dark Header Section -->
+      <div class="bg-[#5c4033] p-8 md:p-10 relative">
+        <div class="flex justify-between items-start mb-4">
+          <span class="inline-flex items-center bg-[#8b4513]/30 text-[#f7e9d7] text-[11px] font-bold tracking-widest uppercase px-4 py-1.5 rounded-full border border-[#8b4513]">
+            <span class="inline-block w-2 h-2 bg-red-500 rounded-full animate-pulse mr-2"></span>
+            SECURE TUNNEL
+          </span>
+          <a href="/" class="flex items-center text-sm font-medium text-white bg-white/10 hover:bg-white/20 border border-white/20 px-4 py-2 rounded-lg transition-colors">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+            Back
+          </a>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-3">Ask an Expert / Report Threat</h1>
+        <p class="text-[#d6c4b0] text-lg">Struggling with a cyber concern, hack, scam, or cyberbullying? Tell us confidentially below.</p>
+      </div>
+
+      <!-- Form Section -->
+      <form id="report-form" class="p-8 md:p-10">
+        
+        <div id="success-message" class="hidden mb-8 bg-[#e8f5e9] border border-[#4caf50] text-[#2e7d32] p-4 rounded-xl flex items-start">
+          <svg class="w-6 h-6 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <div>
+            <h4 class="font-bold mb-1">Report Securely Submitted</h4>
+            <p class="text-sm">Thank you. Your incident details have been encrypted and sent to our AI triage system. An expert will review this shortly.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <div>
+            <label class="block text-sm font-bold text-[#3b1f0e] uppercase tracking-wide mb-2">Your Name / Handle</label>
+            <input type="text" placeholder="Leave anonymous if preferred" class="w-full bg-[#fdf8f3] border border-[#d6c4b0] rounded-xl px-4 py-3 text-[#5c4033] focus:outline-none focus:ring-2 focus:ring-[#5c4033] focus:border-transparent transition-all">
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-[#3b1f0e] uppercase tracking-wide mb-2">Secure Email Address</label>
+            <input type="email" placeholder="To receive expert follow-up" class="w-full bg-[#fdf8f3] border border-[#d6c4b0] rounded-xl px-4 py-3 text-[#5c4033] focus:outline-none focus:ring-2 focus:ring-[#5c4033] focus:border-transparent transition-all">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <div>
+            <label class="block text-sm font-bold text-[#3b1f0e] uppercase tracking-wide mb-2">Nature of Threat</label>
+            <div class="relative">
+              <select required class="w-full appearance-none bg-[#fdf8f3] border border-[#d6c4b0] rounded-xl px-4 py-3 text-[#5c4033] focus:outline-none focus:ring-2 focus:ring-[#5c4033] focus:border-transparent transition-all cursor-pointer">
+                <option value="" disabled selected>Select an incident type</option>
+                <option value="financial">Financial Scam</option>
+                <option value="profile">Profile Hack</option>
+                <option value="harassment">Cyberbullying / Harassment</option>
+                <option value="phishing">Phishing / Suspicious Link</option>
+                <option value="identity">Identity Theft</option>
+                <option value="other">Other</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#7a5a3a]">
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </div>
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-bold text-[#3b1f0e] uppercase tracking-wide mb-2">How Urgent is This?</label>
+            <div class="flex space-x-2 md:space-x-3">
+              <button type="button" class="urgency-btn flex-1 bg-[#fdf8f3] border border-[#d6c4b0] text-[#7a5a3a] py-3 rounded-xl font-medium transition-all focus:outline-none data-[selected=true]:bg-[#e0f2fe] data-[selected=true]:border-[#38bdf8] data-[selected=true]:text-[#0369a1]" onclick="selectUrgency(this)">Low</button>
+              <button type="button" class="urgency-btn flex-1 bg-[#fdf8f3] border border-[#d6c4b0] text-[#7a5a3a] py-3 rounded-xl font-medium transition-all focus:outline-none data-[selected=true]:bg-[#fef08a] data-[selected=true]:border-[#eab308] data-[selected=true]:text-[#854d0e]" onclick="selectUrgency(this)">Medium</button>
+              <button type="button" class="urgency-btn flex-1 bg-[#fdf8f3] border border-[#d6c4b0] text-[#7a5a3a] py-3 rounded-xl font-medium transition-all focus:outline-none data-[selected=true]:bg-[#fee2e2] data-[selected=true]:border-[#ef4444] data-[selected=true]:text-[#b91c1c]" onclick="selectUrgency(this)">Critical</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-8">
+          <label class="block text-sm font-bold text-[#3b1f0e] uppercase tracking-wide mb-2">Describe the Situation</label>
+          <textarea required rows="4" placeholder="Please describe what happened, any suspicious messages received, or questions you have. Do NOT include passwords." class="w-full bg-[#fdf8f3] border border-[#d6c4b0] rounded-xl px-4 py-3 text-[#5c4033] focus:outline-none focus:ring-2 focus:ring-[#5c4033] focus:border-transparent transition-all resize-y"></textarea>
+        </div>
+
+        <div class="bg-[#f3ede7] border border-[#e5d6c3] rounded-xl p-5 mb-8">
+          <p class="text-sm text-[#7a5a3a] leading-relaxed">I authorize Avanzo Trust experts to review these safely secured details. I understand this transmission is protected, and any AI instant safety support does not replace direct legal or police assistance for active crimes.</p>
+        </div>
+
+        <div class="flex justify-end">
+          <button type="submit" class="bg-[#3b1f0e] text-white font-bold py-4 px-8 rounded-xl hover:bg-[#5c4033] transition-colors shadow-lg hover:shadow-xl flex items-center">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+            Submit & Request AI Triage
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </main>

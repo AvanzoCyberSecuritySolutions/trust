@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+title: "1-Min Health Check"
+---
+
+<main class="flex-grow flex items-center justify-center py-24 px-4 mt-16">
+    <div class="max-w-3xl w-full bg-white rounded-3xl shadow-2xl border border-[#e5d6c3] p-6 md:p-10 relative overflow-hidden" id="quiz-container">
+      
+      <!-- Progress Bar -->
+      <div class="mb-8" id="progress-container">
+        <div class="flex justify-between text-sm font-medium text-[#7a5a3a] mb-2">
+          <span>Question <span id="current-q-num">1</span> of 20</span>
+          <span id="progress-percent">5%</span>
+        </div>
+        <div class="w-full bg-[#f3ede7] rounded-full h-2.5">
+          <div id="progress-bar" class="bg-[#5c4033] h-2.5 rounded-full transition-all duration-300" style="width: 5%"></div>
+        </div>
+      </div>
+
+      <!-- Question View -->
+      <div id="question-view">
+        <h2 id="question-text" class="text-2xl md:text-3xl font-bold text-[#3b1f0e] mb-8 leading-tight">
+          Loading question...
+        </h2>
+
+        <div class="space-y-4" id="options-container">
+          <!-- Options will be injected here via JS -->
+        </div>
+      </div>
+
+      <!-- Results View -->
+      <div id="results-view" class="hidden text-center">
+        <div class="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-6" id="result-icon-bg">
+          <svg id="result-icon" class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        </div>
+        <h2 class="text-4xl font-extrabold text-[#3b1f0e] mb-2" id="score-text">0%</h2>
+        <h3 class="text-2xl font-semibold text-[#5c4033] mb-4" id="result-title">Calculating...</h3>
+        <p class="text-[#7a5a3a] text-lg mb-8 leading-relaxed" id="result-desc">Please wait while we calculate your cyber health score.</p>
+        
+        <div class="bg-[#fdf8f3] rounded-2xl p-6 border border-[#e5d6c3] text-left mb-8">
+          <h4 class="font-bold text-[#3b1f0e] mb-4">Key Recommendations:</h4>
+          <ul class="space-y-3 text-[#6b5040] text-sm md:text-base" id="recommendations-list">
+            <!-- Recommendations injected here -->
+          </ul>
+        </div>
+
+        <button onclick="location.reload()" class="bg-[#5c4033] text-white font-bold py-3 px-8 rounded-full hover:bg-[#482f21] transition-colors shadow-lg hover:shadow-xl w-full sm:w-auto">
+          TAKE ASSESSMENT AGAIN
+        </button>
+      </div>
+
+    </div>
+  </main>

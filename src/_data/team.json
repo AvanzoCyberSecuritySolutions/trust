@@ -1,0 +1,46 @@
+{
+  "members": [
+    {
+      "name": "Pattathil Dhanya Menon",
+      "role": "Managing Trustee",
+      "image": "/assets/images/officials/WhatsApp-Image-2024-01-23-at-17.06.24.webp",
+      "card": "/cards/dhanya.html"
+    },
+    {
+      "name": "Santhosh K C",
+      "role": "Trustee",
+      "image": "/assets/images/officials/2969e984-6dad-48aa-b323-ae41d42fa50f.webp",
+      "card": "/cards/santhosh.html"
+    },
+    {
+      "name": "Ajith Kumar Parakkad",
+      "role": "President Projects",
+      "image": "/assets/images/officials/247da56a-0024-48ef-b574-28e8f5372476.webp",
+      "card": "/cards/ajith.html"
+    },
+    {
+      "name": "Adv. Preetha R",
+      "role": "Legal Head",
+      "image": "/assets/images/officials/IMG_7330.webp",
+      "card": "/cards/preetha.html"
+    },
+    {
+      "name": "Pattathil Pranav Menon",
+      "role": "Project Lead",
+      "image": "/assets/images/officials/WhatsApp-Image-2024-01-23-at-17.06.54.webp",
+      "card": "/cards/pranav.html"
+    },
+    {
+      "name": "Vivek M Menon",
+      "role": "Technical Head",
+      "image": "/assets/images/officials/vivekkk.png",
+      "card": "/cards/vivek.html"
+    },
+    {
+      "name": "Sreehari Shyne",
+      "role": "Coordinator",
+      "image": "/assets/images/officials/sree.png",
+      "card": "/cards/sreehari.html"
+    }
+  ]
+}

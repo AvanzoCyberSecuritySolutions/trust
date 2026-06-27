@@ -1,0 +1,27 @@
+{
+  "main": [
+    { "label": "Home", "url": "/" },
+    { "label": "About Us", "url": "/about/" },
+    {
+      "label": "Services",
+      "dropdown": true,
+      "items": [
+        { "label": "Cyber Awareness", "url": "https://cap.ind.in/", "external": true },
+        { "label": "Law & Legal Assistance", "url": "/services/law/" },
+        { "label": "Helpline", "url": "/services/helpline/" },
+        { "label": "Cyber Serenity", "url": "/services/serenity/" }
+      ]
+    },
+    { "label": "Affiliates", "url": "/community/affiliates/" },
+    { "label": "Internship", "url": "https://docs.google.com/forms/d/e/1FAIpQLSfS98aNkIoI4f5ySB9FwMce_iAtwqlbp5_7qlLO9X_LG719hA/viewform", "external": true },
+    { "label": "Contact Us", "url": "/contact/" }
+  ],
+  "footer": {
+    "services": [
+      { "label": "Cyber Awareness Programme", "url": "https://cap.ind.in/", "external": true },
+      { "label": "Cyber Serenity", "url": "/services/serenity/" },
+      { "label": "Law & Legal Assistance", "url": "/services/law/" },
+      { "label": "Helpline", "url": "/services/helpline/" }
+    ]
+  }
+}
