@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: "Contact Us"
+description: "Contact Avanzo Charitable Trust for support, partnerships, or inquiries regarding our cyber awareness programs."
 ---
 
 <!-- Contact Section -->
@@ -183,4 +184,18 @@ title: "Contact Us"
         }, 5000);
     });
   });
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["NGO", "ContactPage"],
+  "name": "{{ site.name }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "{{ site.phoneFormatted }}",
+    "email": "{{ site.email }}"
+  }
+}
 </script>

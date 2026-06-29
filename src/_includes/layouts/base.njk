@@ -8,6 +8,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if title %}{{ title }} | {{ site.shortName }}{% else %}{{ site.shortName }} | {{ site.tagline }}{% endif %}</title>
+  
+  {% set seoDescription = description | default(site.tagline) %}
+  <meta name="description" content="{{ seoDescription }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  
+  <meta property="og:title" content="{% if title %}{{ title }} | {{ site.shortName }}{% else %}{{ site.name }}{% endif %}">
+  <meta property="og:description" content="{{ seoDescription }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}{{ site.logo }}">
+  <meta property="og:type" content="website">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
   {% block head %}{% endblock %}
   <link rel="stylesheet" href="/assets/css/style.css">
